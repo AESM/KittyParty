@@ -1,0 +1,39 @@
+/* humanstxt.org */
+
+/***= Humans Text File
+========================================================================*/
+
+  Some information about the people who contributed
+
+/*== Author ============================================================*/
+
+  Developer & Designer: Ali Esmaili
+  Email: AESM85@gmail.com
+  SuitAndCape GitHub: https://github.com/SuitAndCape
+  Personal GitHub: https://github.com/AESM
+  Website: https://SuitAndCape.github.io/
+  LinkedIn: https://www.linkedin.com/in/SuitAndCape
+  Dribbble: https://dribbble.com/SuitAndCape
+  Twitter: https://twitter.com/SuitAndCape
+  Location: Southern Bay Area
+
+/*== Thanks ============================================================*/
+
+  /*===== NAME Team =====*/
+    Name: NAME
+    Role: ROLE
+    Email: EMAIL
+    GitHub: https://github.com/USERNAME
+    Website: https://WEBSITE/
+    LinkedIn: https://www.linkedin.com/in/USERNAME
+    Dribbble: https://dribbble.com/USERNAME
+    Twitter: https://twitter.com/USERNAME
+    Instagram: https://instagram.com/USERNAME
+    Location: AREA
+
+/*== Site Info =========================================================*/
+
+  Last update: 201Y/MM/DD
+  Language: English
+  Components: HTML5, CSS3
+  Development tools: Sublime Text 3, iTerm2, Illustrator, Photoshop
