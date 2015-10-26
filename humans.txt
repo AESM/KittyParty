@@ -17,23 +17,9 @@
   Twitter: https://twitter.com/SuitAndCape
   Location: Southern Bay Area
 
-/*== Thanks ============================================================*/
-
-  /*===== NAME Team =====*/
-    Name: NAME
-    Role: ROLE
-    Email: EMAIL
-    GitHub: https://github.com/USERNAME
-    Website: https://WEBSITE/
-    LinkedIn: https://www.linkedin.com/in/USERNAME
-    Dribbble: https://dribbble.com/USERNAME
-    Twitter: https://twitter.com/USERNAME
-    Instagram: https://instagram.com/USERNAME
-    Location: AREA
-
 /*== Site Info =========================================================*/
 
-  Last update: 201Y/MM/DD
+  Last update: 2015/10/26
   Language: English
-  Components: HTML5, CSS3
+  Components: HTML5, CSS3, Sass, SMACSS, RAPTORSMACSS, JavaScript, Node.js, Express.js, Socket.io, Giphy API
   Development tools: Sublime Text 3, iTerm2, Illustrator, Photoshop

@@ -3,7 +3,7 @@
 KittyParty
 ==========================================================================
 
-A chat program where users can send messages and GIFs that "correspond" with what they're saying .
+A chat program where users send GIFs that "correspond" with their messages.
 
 ## Contents
 
