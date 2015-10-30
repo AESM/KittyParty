@@ -33,4 +33,5 @@ Stories, MVP, Specs, and Pseudocode
 - Node.js
 - Express.js
 - Socket.io
+- Gulp.js
 - Giphy API

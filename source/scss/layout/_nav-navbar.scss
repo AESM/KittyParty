@@ -1,0 +1,62 @@
+// _nav-navbar.scss
+
+////= Navigation Styling
+//======================================================================//
+
+.nav,
+.navbar {
+  // position: relative;
+
+  @include el(words) {
+    @extend .navbar;
+    // margin-top: pxem(50px);
+
+    // @include respond-to('sm') {
+    //   // float: right;
+    // }
+
+    li {
+      // margin-top: pxem(30px);
+      // margin: 0;
+      // margin: 0 pxem(20px);
+
+      a {
+        @extend .accordion-underline;
+        // display: block;
+      }
+    }
+  }
+
+  @include el(icons) {
+    @extend .navbar;
+
+    li {
+      padding: 0 pxem(10px);
+    }
+  }
+
+  a {
+    color: $nav-link-color;
+    margin: pxem(5px) pxem(15px);
+    text-decoration: none;
+  }
+
+  ul {
+    @extend .clearfix;
+    @extend .no-bullets;
+    margin-top: pxem(5px);
+  }
+
+  li {
+    // display: inline-block;
+    position: relative;
+  }
+
+  // .active {
+  //   background-color: $nav-link-bg;
+
+  //   i {
+  //     color: $hover-color;
+  //   }
+  // }
+}

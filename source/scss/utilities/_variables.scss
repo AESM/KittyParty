@@ -1,0 +1,152 @@
+// _variables.scss
+
+////= Global Variable Assignments
+//======================================================================//
+
+//== Foundation Assignments =============================================/
+
+/// HTML font-size
+/// Used with @pxrem function
+$core__html--font-size: 16px !default; // _foundation => html {font-size}
+
+/// Body font-size
+/// Used with @pxem function
+$core__body--font-size: 20px !default; // _foundation => body {font}
+
+/// Body font line-height
+$core__body--line-height: 1 !default; // _foundation => body {font}
+
+/// Body font-stack
+$core__body--font-stack: $font-stack--roboto; // _foundation => body {font}
+
+/// Body text-color
+$core__body--text-color: $gallery; // _foundation => body {color}
+
+/// Body background-color
+$core__body--background-color: $gallery; // _foundation => body {background}
+
+//== Asset Path Assignments =============================================/
+
+/// Glyph paths
+$font: $path__glyph + '/fonts'; // _glyphs => @font-face {src}
+$icon: $path__glyph + '/icons'; // _glyphs => @font-face {src}
+
+/// Image paths
+$bg-img: $path__img + '/backgrounds';
+$banner: $path__img + '/banners';
+$fav: $path__img + '/favicons';
+$logo: $path__img + '/logos';
+
+/// JavaScript paths
+$vend-js: $path__js + '/vendors';
+
+//== Glyph Stack Assignments ============================================/
+
+/// Main fonts
+$primary-font: $font-stack--aleo;
+$secondary-font: $font-stack--futura;
+$tertiary-font: $font-stack--garamond;
+$accent-font: $font-stack--lucida-sans-type;
+
+/// Font usage
+$code-font: $font-stack--open-sans; // _typography => code {font-family}
+// $comp-font: $XXXXXX;
+
+/// Icon usage
+$main-icon: $icon-stack--simple-line-icons; // _typography => .sli-style {font-family}
+
+//== Descriptive Color Assignments ======================================/
+
+/// Main colors
+$primary-color: $blue;
+$secondary-color: $maroon;
+$tertiary-color: $purple;
+$accent-color: $navy;
+$shadow-color: rgba($black, .18);
+
+/// Color usage
+$badge-bg-color: $alizarin-crimson;
+$badge-color: $gallery;
+$code-color: $wild-sand; // _typography => code {color}
+$header-bg-color: $fuchsia; // _header-banner => .header,.banner {@include mo(nav-colors) {background-color}}
+$hover-color: $java; // _typography => a,i {&:hover {color}}
+$icon-color: $grey; // _typography => .sli-style {color}
+$link-color: $silver; // _typography => a {color}
+$nav-link-color: $silver; // _nav-navbar => .nav,.navbar {a {color}}
+$title-copy-color: $prussian-blue;
+
+//== Numeric Value Assignments ==========================================/
+
+/// Main font sizes
+$font-size: $core__body--font-size; // _typography => h5,p {font-size}
+$sli-font-size: 30px; // _typography => .sli-style {font-size}
+$subp-font-size: 70%; // _typography => sub,sup {font-size}
+
+/// Font size usage
+$lg-font-size: 110%;
+$md-font-size: 90%;
+$sm-font-size: 85%;
+
+/// Border radii
+$main-radius: .5%;
+$round-radius: 50%;
+$curve-radius: 25%;
+$bend-radius: 5%;
+
+/// Transition durations
+$main-trans: .3s;
+$select-trans: .15s; // _base => a,button {transition}
+
+/// Main container widths
+$desktop-width: 1100px; // _container => .container {@include respond-to('xxxl') {width}}
+$laptop-width: 1068px; // _container => .container {@include respond-to('xl') {width}}
+$tablet-width: 764px; // _container => .container {@include respond-to('sm') {width}}
+$gutter-width: 2%; // _container => .container {@include respond-to(...) {.gutters .column {margin-left}}}
+
+/// Font emphasis
+$heavy: 900;
+$ultra-bold: 800;
+$bold: 700;
+$demi-bold: 600;
+$medium: 500;
+$normal: 400;
+$light: 300;
+$ultra-light: 200;
+$thin: 100;
+
+//== Assigned Color Maps ================================================/
+
+$ui-map: (
+  'error': $monza,
+  'info': $studio,
+  'missing': $sun-glow,
+  'notice': $purple-heart,
+  'success': $jungle-green,
+  'warning': $tango
+);
+
+
+
+////= Global FunkyAnimatronicMoccasinHenchmen Variable Assignments
+//======================================================================//
+
+//== Foundation Variables ===============================================/
+
+/// HTML font-size
+/// Used with @pxrem function
+/////// Deleted because of redundancy
+
+/// Body font-size
+/// Used with @pxem function
+/////// Deleted because of redundancy
+
+/// Color usage
+$truncated-bg-color: $gallery;
+$truncated-bg-rgba: $rgba-gallery;
+
+//== Animatronics Variables =============================================/
+
+/// Accordian-underline
+$acc-und__height: 1px;
+$acc-und__scalex--start: 0;
+$acc-und__scalex--end: 1;

@@ -1,0 +1,189 @@
+// _helpers.scss
+
+////= Helper Classes and Placeholders
+//======================================================================//
+
+/// Center alignment
+.center-align,
+%center-align {
+  text-align: center;
+}
+
+/// Clearfix lets an element clear its child elements, in float layouts
+//where elements are floated horizontal stacking
+/// Often used to combat the zero-height container problem
+/// @link https://css-tricks.com/snippets/css/clear-fix/
+.clearfix,
+%clearfix {
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+/// The old Kellum method
+/// Hide text in the element behind it
+/// @author Scott Kellum
+/// @link http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+.hide-text,
+%hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/// Remove default list styling
+.no-bullets,
+%no-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/// Full-width, centered container
+.tupperware,
+%tupperware {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: pxem(22px);
+  padding-right: pxem(22px);
+  width: 100%;
+}
+
+
+
+////= Henchmen (Helpers)
+//======================================================================//
+
+/// Place a border around an element
+.border,
+%border {
+  border: pxem(1px) solid $ebony;
+}
+
+/// Center alignment
+/////// Deleted because of redundancy
+
+/// Center elements
+.centered,
+%centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/// Clearfix lets an element clear its child elements, in float layouts
+//where elements are floated horizontal stacking
+/////// Deleted because of redundancy
+
+/// Fixed position
+.fasten,
+%fasten {
+  position: fixed;
+}
+
+/// Image flipped horizontally
+.horizon-flip,
+%horizon-flip {
+  @include prefixinator(transform, scaleX(-1));
+  -ms-filter: 'FlipH';
+  filter: FlipH;
+}
+
+/// Hide element visually and from screenreaders, without removing it
+/// @source HTML5Boilerplate
+/// @link https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L151-L157
+.invisible,
+%invisible {
+  visibility: hidden;
+}
+
+/// Remove element shadow styling
+.no-bs,
+%no-bs {
+  box-shadow: none;
+}
+
+/// Removes the display of elements
+.no-display,
+%no-display {
+  display: none;
+}
+
+/// Remove default list styling
+/////// Deleted because of redundancy
+
+/// Momentum scrolling on iOS overflow elements
+/// @link https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/
+.smooth-scroll,
+%smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; // has to be scroll, not auto
+}
+
+/// Truncates text that is too long
+/// Requires a fixed width
+.truncate,
+%truncate {
+  overflow: hidden;
+
+  > *:first-child {
+    float: right;
+    margin-left: -10px;
+    width: 100%;
+  }
+
+  &:before {
+    content: '';
+    float: left;
+    height: 100%;
+    width: pxem(10px);
+  }
+
+  &:after {
+    background: -webkit-linear-gradient(left, $truncated-bg-rgba, $truncated-bg-color 50%, $truncated-bg-color);
+    background: linear-gradient(to right, $truncated-bg-rgba, $truncated-bg-color 50%, $truncated-bg-color);
+    content: '\02026';
+    float: right;
+    left: 100%;
+    margin-left: -3em;
+    padding-right: pxem(10px);
+    position: relative;
+    text-align: right;
+    top: pxem(-25px);
+    width: 3em;
+  }
+}
+
+/// Hide only visually, but have it available for screen readers
+/// @source HTML5Boilerplate
+/// @modifier Ali Esmaili
+/// @link https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+.visually-hidden,
+%visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: pxem(1px);
+  margin: pxem(-1px);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: pxem(1px);
+
+  /// Extends visually-hidden to allow the element to be focusable when
+  //navigated to via the keyboard
+  /// @source HTML5Boilerplate
+  /// @link https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L135-L149
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}

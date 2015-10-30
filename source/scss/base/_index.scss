@@ -1,0 +1,16 @@
+// _index.scss
+
+////= Base Manifest
+//======================================================================//
+
+/// Import HTML and Body styling
+@import 'foundation';
+
+/// Import base styling
+@import 'base';
+
+/// Import additional fonts and icons
+@import 'glyphs';
+
+/// Import typographic styling
+@import 'typography';

@@ -1,0 +1,94 @@
+// _base.scss
+
+////= Base Styling
+//======================================================================//
+
+a,
+button {
+  color: inherit;
+  transition: $select-trans;
+}
+
+a {
+  background-color: $clear;
+  display: inline-block;
+  position: relative;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button,
+input {
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  overflow: visible;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ol,
+ul,
+blockquote,
+button,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  border: 0;
+}
+
+img {
+  border: 0;
+  // display: block;
+  height: auto;
+  margin: 0 auto;
+  max-height: 80vh;
+  max-width: 100%;
+}
+
+li {
+  display: block;
+}
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: pxem(-8px);
+}
+
+sub {
+  bottom: pxem(-4px);
+}

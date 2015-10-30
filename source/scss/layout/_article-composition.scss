@@ -1,0 +1,28 @@
+// _article-composition.scss
+
+////= Article Composition Styling
+//======================================================================//
+
+.article,
+.composition {
+  // position: relative;
+  // @include box-sizinator(content-box);
+  // font-family: $comp-font;
+
+  p {
+    font-size: pxem(14px);
+  }
+
+
+  // @include el(headline) {
+    //
+  // }
+
+  // @include el(baseline) {
+    //
+  // }
+
+  // @include el(hyperlink) {
+    //
+  // }
+}

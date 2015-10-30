@@ -1,0 +1,32 @@
+// _home-page.scss
+
+////= Home Page Styling
+//======================================================================//
+
+.home-page {
+  @include respond-to('sm') {
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  @include el(headline) {
+    @extend .center-align;
+    color: $secondary-color;
+    margin: pxem(20px) 0;
+  }
+
+  @include el(baseline) {
+    @extend .center-align;
+    color: $secondary-color;
+    margin-top: pxem(20px);
+
+    > * {
+      margin: 0;
+    }
+  }
+
+  @include el(image) {
+    border-radius: $round-radius;
+    max-width: pxem(190px);
+  }
+}

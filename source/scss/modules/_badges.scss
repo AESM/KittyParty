@@ -1,0 +1,50 @@
+// _badges.scss
+
+////= Badge Components
+//======================================================================//
+
+.badge {
+  background-color: $silver;
+  border-radius: 30px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $black;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: normal;
+  height: 20px;
+  line-height: 20px;
+  min-width: 26px;
+  padding: 0 3px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  // &.unread {
+  //   background-color: $badge-bg-color;
+  //   color: $badge-color;
+  //   font-size: .7rem;
+  //   pointer-events: none;
+  // }
+
+  // // &.total {
+  // //   background-color: $gallery;
+  // //   color: $mine-shaft;
+  // //   font-size: .7rem;
+  // // }
+
+  @include mo(unread) {
+    @extend .badge;
+    background-color: $badge-bg-color;
+    color: $badge-color;
+    font-size: .7rem;
+    pointer-events: none;
+  }
+
+  // @include mo(total) {
+  //   @extend .badge;
+  //   background-color: $gallery;
+  //   color: $mine-shaft;
+  //   font-size: .7rem;
+  // }
+}

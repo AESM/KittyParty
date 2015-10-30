@@ -1,0 +1,14 @@
+// _about-page.scss
+
+////= About Page Styling
+//======================================================================//
+
+.about-page {
+  @include el(photo) {
+
+    @include respond-to('sm') {
+      border-radius: $round-radius;
+      max-width: pxem(190px);
+    }
+  }
+}

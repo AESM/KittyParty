@@ -1,0 +1,50 @@
+// _aside-sidebar.scss
+
+////= Complimentary Content Styling
+//======================================================================//
+
+.aside,
+.sidebar {
+  background-color: $maroon;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  font-size: $sm-font-size;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: pxem(300px);
+
+  &__headline,
+  &__footline {
+    display: flex;
+    margin: 0;
+    position: relative;
+  }
+
+  &__headline {
+    // display: flex;
+    margin: pxem(10px) 0 0 pxem(15px);
+    text-transform: uppercase;
+  }
+
+  &__footline {
+    background-color: $brown;
+    height: pxem(120px);
+    margin-top: pxem(40px);
+
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: pxem(35px) pxem(70px) 0 0;
+    }
+  }
+
+  &__substance {
+    flex: 1 1;
+  }
+  // @include el(hyperlink) {
+    //
+  // }
+}
