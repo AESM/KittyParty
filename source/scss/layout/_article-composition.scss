@@ -1,0 +1,17 @@
+// _article-composition.scss
+
+////= Article Composition Styling
+//======================================================================//
+
+.article,
+.composition {
+  display: inherit;
+  flex: 1 1;
+  flex-direction: column;
+  margin: 0 0 0 pxem(15px);
+
+  p {
+    font-size: pxem(16px);
+    line-height: pxem(30px);
+  }
+}

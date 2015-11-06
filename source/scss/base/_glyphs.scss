@@ -1,0 +1,64 @@
+// _glyphs.scss
+
+////= Additional Fonts and Icons
+//======================================================================//
+
+//== Additional Fonts ===================================================/
+
+/// Loads Aleo Regular font
+@font-face {
+  font-family: 'Aleo-regular';
+  src: url($font + '/Aleo/aleo-regular-webfont.eot');
+  src: url($font + '/Aleo/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url($font + '/Aleo/aleo-regular-webfont.woff2') format('woff2'),
+       url($font + '/Aleo/aleo-regular-webfont.woff') format('woff'),
+       url($font + '/Aleo/aleo-regular-webfont.ttf') format('truetype'),
+       url($font + '/Aleo/aleo-regular-webfont.svg.svg#Aleo-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/// Loads Roboto Regular font
+@font-face {
+  font-family: 'Roboto-regular';
+  src: url($font + '/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/// Loads Roboto Condensed Light font
+@font-face {
+  font-family: 'RobotoCondensed-light';
+  src: url($font + '/Roboto/RobotoCondensed-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+    /// => ToDo: implement the new Kellum method <= ///
+/// Loads ADOBE-BLANK-FONT font
+/// @link https://github.com/adobe-fonts/adobe-blank
+// @font-face {
+//   font-family: 'ADOBE-BLANK-FONT';
+//   src: url($font + '/ABF-FOLDER/adobeblankfont.eot');
+//   src: url($font + '/ABF-FOLDER/adobeblankfont.eot?#iefix') format('embedded-opentype'),
+//        url($font + '/ABF-FOLDER/adobeblankfont.woff') format('woff'),
+//        url($font + '/ABF-FOLDER/adobeblankfont.ttf') format('truetype'),
+//        url($font + '/ABF-FOLDER/adobeblankfont.svg#ADOBE-BLANK-FONT') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+//== Additional Icons ===================================================/
+
+/// Loads Simple line icons
+@font-face {
+  font-family: 'Simple-line-icons';
+  src: url($icon + '/Simple-line-icons/Simple-Line-Icons.eot?v=2.2.2');
+  src: url($icon + '/Simple-line-icons/Simple-Line-Icons.eot?#iefix&v=2.2.2') format('embedded-opentype'),
+        url($icon + '/Simple-line-icons/Simple-Line-Icons.ttf?v=2.2.2') format('truetype'),
+        url($icon + '/Simple-line-icons/Simple-Line-Icons.woff2?v=2.2.2') format('woff2'),
+        url($icon + '/Simple-line-icons/Simple-Line-Icons.woff?v=2.2.2') format('woff'),
+        url($icon + '/Simple-line-icons/Simple-Line-Icons.svg?v=2.2.2#Simple-line-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

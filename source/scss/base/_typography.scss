@@ -1,0 +1,90 @@
+// _typography.scss
+
+////= Typographic Styling
+//======================================================================//
+
+li a,
+a,
+i {
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote,
+dfn {
+  font-style: italic;
+}
+
+code {
+  color: $code-color;
+  font-family: $code-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: pxem(137.08px);
+}
+
+h2 {
+  font-size: pxem(84.72px);
+}
+
+h3 {
+  font-size: pxem(52.36px);
+}
+
+h4 {
+  font-size: pxem(32.36px);
+}
+
+h5,
+p {
+  font-size: pxem($font-size);
+}
+
+i {
+  font-size: pxem(25px);
+}
+
+small {
+  font-size: pxem(12.36px);
+}
+
+sub,
+sup {
+  font-size: $subp-font-size;
+  line-height: 0;
+}
+
+/// Attributes for Simple Line Icons
+/// @author Sabbir Ahmed
+/// @link https://github.com/thesabbir/simple-line-icons
+.sli-style {
+  color: $icon-color;
+  font-family: $main-icon;
+  font-size: pxem($sli-font-size);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  speak: none;
+  text-transform: none;
+}

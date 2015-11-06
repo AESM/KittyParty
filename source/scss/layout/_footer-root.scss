@@ -1,0 +1,23 @@
+// _footer-root.scss
+
+////= Content Info Styling
+//======================================================================//
+
+.footer,
+.root {
+  @extend .center-align;
+  @extend .clearfix;
+  padding-bottom: pxem(35px);
+  padding-top: pxem(35px);
+
+  small {
+    color: $title-copy-color;
+    float: none;
+    padding-top: pxem(10px);
+
+    @include respond-to('sm') {
+      float: right;
+      margin: 0 pxem(5px) 0 0;
+    }
+  }
+}

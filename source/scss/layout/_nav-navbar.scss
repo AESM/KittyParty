@@ -1,0 +1,67 @@
+// _nav-navbar.scss
+
+////= Navigation Styling
+//======================================================================//
+
+.nav,
+.navbar {
+  // position: relative;
+  &__dropdown {
+    @extend .navbar;
+    margin: pxem(8px) 0 0 pxem(10px);
+
+    @include mo(menu) {
+      list-style-position: outside;
+      list-style-type: circle;
+      white-space: nowrap;
+      z-index: z(floor);
+    }
+
+    @include mo(list) {
+      display: none;
+    }
+
+    // @include mo(item) {
+      //
+    // }
+
+    // @include mo(hyperlink) {
+      //
+    // }
+
+    ul {
+      @extend .clearfix;
+      @extend .no-bullets;
+      margin-top: pxem(5px);
+    }
+
+    li {
+      position: relative;
+    }
+  }
+
+  &__rooms {
+    @extend .navbar;
+
+    a {
+      margin: pxem(5px) pxem(45px);
+    }
+
+    ul {
+      @extend .clearfix;
+      @extend .no-bullets;
+      margin-top: pxem(5px);
+    }
+
+    li {
+      @extend .chat-select;
+      position: relative;
+    }
+  }
+
+  a {
+    color: $nav-link-color;
+    font-family: $primary-font;
+    text-decoration: none;
+  }
+}

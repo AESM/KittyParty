@@ -1,0 +1,37 @@
+// _states.scss
+
+////= State Classes and Placeholders
+//======================================================================//
+
+.chat-select,
+%chat-select {
+  &:hover,
+  &.active {
+    border-bottom-left-radius: pxem(10px);
+    border-top-left-radius: pxem(10px);
+    margin-left: pxem(5px);
+
+    a {
+      color: $wild-sand;
+      margin-left: pxem(25px);
+    }
+  }
+
+  &:hover {
+    background-color: $bali-hai;
+  }
+
+  &.active {
+    background-color: $persian-blue;
+
+    &::before {
+      background-color: $fuchsia;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: pxem(4px);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// _index.scss
+
+////= Layout Manifest
+//======================================================================//
+
+/// Import division container styling
+@import 'container';
+
+/// Import column styling
+@import 'column';
+
+/// Import row styling
+@import 'row';
+
+/// Import header banner styling
+@import 'header-banner';
+
+/// Import content info styling
+@import 'footer-root';
+
+/// Import main content styling
+@import 'main-principal';
+
+/// Import article composition styling
+@import 'article-composition';
+
+/// Import complimentary content styling
+@import 'aside-sidebar';
+
+/// Import navigation styling
+@import 'nav-navbar';

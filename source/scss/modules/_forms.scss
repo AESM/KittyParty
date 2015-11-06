@@ -1,0 +1,24 @@
+// _forms.scss
+
+////= Form Components
+//======================================================================//
+
+.form {
+  @include el(search) {
+    align-items: inherit;
+    display: inherit;
+    flex: 1 1;
+    justify-content: flex-end;
+  }
+
+  @include el(message) {
+    padding: pxem(30px);
+
+    textarea {
+      border: pxem(2px) solid $silver-sand;
+      border-radius: pxem(5px);
+      outline: none;
+      width: 100%;
+    }
+  }
+}

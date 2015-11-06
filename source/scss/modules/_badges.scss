@@ -1,0 +1,25 @@
+// _badges.scss
+
+////= Badge Components
+//======================================================================//
+
+.badge {
+  @extend .center-align;
+  border-radius: pxem(34px);
+  display: inline-block;
+  font-size: pxem(16px);
+  font-weight: normal;
+  height: pxem(30px);
+  line-height: pxem(30px);
+  margin: 0 pxem(10px);
+  min-width: pxem(30px);
+  vertical-align: middle;
+  white-space: nowrap;
+
+  @include mo(unread) {
+    @extend .badge;
+    background-color: $badge-bg-color;
+    color: $badge-color;
+    pointer-events: none;
+  }
+}

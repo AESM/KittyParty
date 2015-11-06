@@ -1,0 +1,335 @@
+// _container.scss
+
+////= Division Container Styling
+//======================================================================//
+
+.container {
+  @extend .clearfix;
+  @extend .tupperware;
+
+  /// Responsive 12-column grid
+  /// @based-off-of http://responsive.gs/
+  @include respond-to('sm') {
+    max-width: pxem($tablet-width);
+
+    .gutter .column {
+      margin-left: $gutter-width;
+    }
+
+    .gutter .column:first-child {
+      margin-left: 0;
+    }
+
+    .span-1 {
+      width: 8.5%;
+    }
+
+    .span-2 {
+      width: 16.5%;
+    }
+
+    .span-3 {
+      width: 25%;
+    }
+
+    .span-4 {
+      width: 33.5%;
+    }
+
+    .span-5 {
+      width: 41.5%;
+    }
+
+    .span-6 {
+      width: 50%;
+    }
+
+    .span-7 {
+      width: 58.5%;
+    }
+
+    .span-8 {
+      width: 66.5%;
+    }
+
+    .span-9 {
+      width: 75%;
+    }
+
+    .span-10 {
+      width: 83.5%;
+    }
+
+    .span-11 {
+      width: 91.5%;
+    }
+
+    .span-12 {
+      width: 100%;
+    }
+
+    .gutter .span-1 {
+      width: 6.5%;
+    }
+
+    .gutter .span-2 {
+      width: 15%;
+    }
+
+    .gutter .span-3 {
+      width: 23.5%;
+    }
+
+    .gutter .span-4 {
+      width: 32%;
+    }
+
+    .gutter .span-5 {
+      width: 40.5%;
+    }
+
+    .gutter .span-6 {
+      width: 49%;
+    }
+
+    .gutter .span-7 {
+      width: 57.5%;
+    }
+
+    .gutter .span-8 {
+      width: 66%;
+    }
+
+    .gutter .span-9 {
+      width: 74.5%;
+    }
+
+    .gutter .span-10 {
+      width: 83%;
+    }
+
+    .gutter .span-11 {
+      width: 91.5%;
+    }
+
+    .gutter .span-12 {
+      width: 100%;
+    }
+  }
+
+  @include respond-to('xl') {
+    max-width: pxem($laptop-width);
+
+    .gutter .column {
+      margin-left: $gutter-width;
+    }
+
+    .gutter .column:first-child {
+      margin-left: 0;
+    }
+
+    .span-1 {
+      width: 8.5%;
+    }
+
+    .span-2 {
+      width: 16.5%;
+    }
+
+    .span-3 {
+      width: 25%;
+    }
+
+    .span-4 {
+      width: 33.5%;
+    }
+
+    .span-5 {
+      width: 41.5%;
+    }
+
+    .span-6 {
+      width: 50%;
+    }
+
+    .span-7 {
+      width: 58.5%;
+    }
+
+    .span-8 {
+      width: 66.5%;
+    }
+
+    .span-9 {
+      width: 75%;
+    }
+
+    .span-10 {
+      width: 83.5%;
+    }
+
+    .span-11 {
+      width: 91.5%;
+    }
+
+    .span-12 {
+      width: 100%;
+    }
+
+    .gutter .span-1 {
+      width: 6.5%;
+    }
+
+    .gutter .span-2 {
+      width: 15%;
+    }
+
+    .gutter .span-3 {
+      width: 23.5%;
+    }
+
+    .gutter .span-4 {
+      width: 32%;
+    }
+
+    .gutter .span-5 {
+      width: 40.5%;
+    }
+
+    .gutter .span-6 {
+      width: 49%;
+    }
+
+    .gutter .span-7 {
+      width: 57.5%;
+    }
+
+    .gutter .span-8 {
+      width: 66%;
+    }
+
+    .gutter .span-9 {
+      width: 74.5%;
+    }
+
+    .gutter .span-10 {
+      width: 83%;
+    }
+
+    .gutter .span-11 {
+      width: 91.5%;
+    }
+
+    .gutter .span-12 {
+      width: 100%;
+    }
+  }
+
+  @include respond-to('xxxl') {
+    max-width: pxem($desktop-width);
+
+    .gutter .column {
+      margin-left: $gutter-width;
+    }
+
+    .gutter .column:first-child {
+      margin-left: 0;
+    }
+
+    .span-1 {
+      width: 8.5%;
+    }
+
+    .span-2 {
+      width: 16.5%;
+    }
+
+    .span-3 {
+      width: 25%;
+    }
+
+    .span-4 {
+      width: 33.5%;
+    }
+
+    .span-5 {
+      width: 41.5%;
+    }
+
+    .span-6 {
+      width: 50%;
+    }
+
+    .span-7 {
+      width: 58.5%;
+    }
+
+    .span-8 {
+      width: 66.5%;
+    }
+
+    .span-9 {
+      width: 75%;
+    }
+
+    .span-10 {
+      width: 83.5%;
+    }
+
+    .span-11 {
+      width: 91.5%;
+    }
+
+    .span-12 {
+      width: 100%;
+    }
+
+    .gutter .span-1 {
+      width: 6.5%;
+    }
+
+    .gutter .span-2 {
+      width: 15%;
+    }
+
+    .gutter .span-3 {
+      width: 23.5%;
+    }
+
+    .gutter .span-4 {
+      width: 32%;
+    }
+
+    .gutter .span-5 {
+      width: 40.5%;
+    }
+
+    .gutter .span-6 {
+      width: 49%;
+    }
+
+    .gutter .span-7 {
+      width: 57.5%;
+    }
+
+    .gutter .span-8 {
+      width: 66%;
+    }
+
+    .gutter .span-9 {
+      width: 74.5%;
+    }
+
+    .gutter .span-10 {
+      width: 83%;
+    }
+
+    .gutter .span-11 {
+      width: 91.5%;
+    }
+
+    .gutter .span-12 {
+      width: 100%;
+    }
+  }
+}

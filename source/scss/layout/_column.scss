@@ -1,0 +1,12 @@
+// _column.scss
+
+////= Column Styling
+//======================================================================//
+
+.column {
+  @extend .center-align;
+  @extend .clearfix;
+  display: block;
+  float: left;
+  width: 100%;
+}

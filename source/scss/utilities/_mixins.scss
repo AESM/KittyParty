@@ -1,0 +1,100 @@
+// _mixins.scss
+
+////= Mixins
+//======================================================================//
+
+//== Standard Input Mixins ==============================================/
+
+/// BEM Block Element selector
+/// @param {String} $element - Element's name
+@mixin el($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+/// BEM Block Modifier selector
+/// @param {String} $modifier - Modifier's name
+@mixin mo($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+/// Background image assignment and features
+/// @param {String} $image-path - Path to image
+/// @param {String} $name - Name of image
+/// @param {Length(s)} $length - Optional length width or width and height
+/// @requires _variables => Asset paths
+@mixin background-img($image-path, $name, $length:false) {
+  background-image: url('#{$image-path}/#{$name}');
+
+  @if($length) {
+    background-size: $length;
+  }
+}
+
+//== Sass Map Mixins ====================================================/
+
+/// Element color map modifier
+/// @param {String} $color-map - Assigned color map's name
+/// @requires _variables => Assigned Color Maps
+/// @example
+//
+// $color-map: (
+//   'color-key': $color-value
+// );
+//
+// .mock-selector {
+//   @include mo-colors($color-map)
+// }
+//
+// <fake-tag class="mock-selector--color-key">
+//
+@mixin mo-colors($color-map) {
+  @each $key, $value in $color-map {
+    &--#{$key} {
+      color: $value;
+    }
+  }
+}
+
+/// Background color map modifier
+/// @param {String} $color-map - Assigned color map's name
+/// @requires _variables => Assigned Color Maps
+/// @example
+//
+// $color-map: (
+//   'color-key': $color-value
+// );
+//
+// .fake-selector {
+//   @include bg-colors($color-map)
+// }
+//
+// <mock-tag class="fake-selector--color-key">
+//
+@mixin bg-colors($color-map) {
+  @each $key, $value in $color-map {
+    &--#{$key} {
+      background-color: $value;
+    }
+  }
+}
+
+/// Responsive manager
+/// @param {String} $key - Breakpoint
+/// @requires _config => $breakpoints
+/// @modifier Ali Esmaili
+/// @link http://sass-guidelin.es/#breakpoint-manager
+@mixin respond-to($key) {
+  $value: map-get($breakpoints, $key);
+
+  @if not $value {
+    @error 'No value found for `#{$key}`. Please make sure it is defined in `$breakpoints` map.';
+  }
+
+  @media #{if(type-of($value) == 'string', unquote($value), inspect($value))} {
+    @content;
+  }
+}

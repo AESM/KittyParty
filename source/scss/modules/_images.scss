@@ -1,0 +1,30 @@
+// _images.scss
+
+////= Image Components
+//======================================================================//
+
+.image {
+  &__avatar {
+    border-radius: $curve-radius;
+
+    &--dashboard {
+      @extend .image__avatar;
+      margin: pxem(20px) pxem(15px) 0 pxem(20px);
+      max-height: pxem(80px);
+      max-width: pxem(80px);
+    }
+
+    &--chat {
+      @extend .image__avatar;
+      max-height: pxem(40px);
+      max-width: pxem(40px);
+    }
+  }
+
+  &--gif {
+    float: left;
+    margin: pxem(10px) 0 pxem(10px) pxem(15px);
+    max-height: pxem(300px);
+    max-width: pxem(400px);
+  }
+}

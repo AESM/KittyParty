@@ -1,0 +1,16 @@
+// _main-principal.scss
+
+////= Main Content Styling
+//======================================================================//
+
+.main,
+.principal {
+  bottom: 0;
+  color: $title-copy-color;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  right: pxem(255px);
+  top: 0;
+}

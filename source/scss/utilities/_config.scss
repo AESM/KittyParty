@@ -1,0 +1,212 @@
+// _config.scss
+
+////= Global Configuration
+//======================================================================//
+
+//== Asset Paths ========================================================/
+
+$path__glyph: '../glyphs' !default;
+$path__img: '../images' !default;
+$path__js: '../javascripts' !default;
+
+//== Glyph Stacks =======================================================/
+
+/// Sans-serif font stacks
+$font-stack--open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-stack--futura: Futura, 'Trebuchet MS', Arial, Helvetica, sans-serif !default;
+
+/// Serif font stacks
+$font-stack--garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
+$font-stack--hoefler-text: 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif !default;
+
+/// Monospace font stacks
+$font-stack--courier-new: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$font-stack--lucida-sans-type: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace !default;
+
+/// Variant and custom font stacks
+$font-stack--aleo: 'Aleo-regular', serif !default;
+$font-stack--roboto: 'Roboto-regular', sans-serif !default;
+$font-stack--roboto-con-light: 'RobotoCondensed-light', sans-serif !default;
+
+/// Icon stacks
+$icon-stack--simple-line-icons: 'Simple-line-icons';
+
+//== Descriptive Colors =================================================/
+
+/// Standard colors
+$clear: transparent !default;
+
+$white: #FFFFFF !default;
+$silver: #C0C0C0 !default;
+$grey: #808080 !default;
+$black: #000000 !default;
+
+$red: #FF0000 !default;
+$maroon: #800000 !default;
+$brown: #A52A2A !default;
+
+$yellow: #FFFF00 !default;
+$gold: #FFD700 !default;
+$orange: #FFA500 !default;
+
+$lime: #00FF00 !default;
+$green: #008000 !default;
+$olive: #808000 !default;
+
+$aqua: #00FFFF !default;
+$teal: #008080 !default;
+$blue: #0000FF !default;
+$navy: #000080 !default;
+
+$fuchsia: #FF00FF !default;
+$purple: #800080 !default;
+$indigo: #4B0082 !default;
+
+/// Variant and custom colors
+$wild-sand: #F4F4F4 !default;
+$gallery: #EFEFEF !default;
+$silver-sand: #BFC1C2 !default;
+$mine-shaft: #323232 !default;
+$tuna: #353542 !default;
+$ebony: #0C0B1D !default;
+$cod-gray: #0B0B0B !default;
+
+$guardsman-red: #BA0101 !default;
+$monza: #C7031E !default;
+$crimson: #DC143C !default;
+$alizarin-crimson: #E32636 !default;
+
+$sun-glow: #FFCC33 !default;
+$tango: #ED7A1C !default;
+$coral: #FF7F50 !default;
+
+$jungle-green: #29AB87 !default;
+$emerald: #5ECE7F !default;
+$java: #1FC2C2 !default;
+
+$pacific-blue: #009DC4 !default;
+$lochmara: #007EC7 !default;
+$prussian-blue: #003153 !default;
+$persian-blue: #1C39BB !default;
+$bali-hai: #859FAF !default;
+$shark: #25272C !default;
+
+$studio: #714AB2 !default;
+$purple-heart: #652DC1 !default;
+$meteorite: #3C1F76 !default;
+
+/// RGBa standard colors
+$rgba-white: rgba(255, 255, 255, 0) !default;
+$rgba-silver: rgba(192, 192, 192, 0) !default;
+$rgba-grey: rgba(128, 128, 128, 0) !default;
+$rgba-black: rgba(0, 0, 0, 0) !default;
+
+$rgba-red: rgba(255, 0, 0, 0) !default;
+$rgba-brown: rgba(165, 42, 42, 0) !default;
+$rgba-yellow: rgba(255, 255, 0, 0) !default;
+$rgba-orange: rgba(255, 165, 0, 0) !default;
+$rgba-green: rgba(0, 128, 0, 0) !default;
+$rgba-blue: rgba(0, 0, 255, 0) !default;
+$rgba-purple: rgba(128, 0, 128, 0) !default;
+
+/// RGBa variant and custom  colors
+$rgba-wild-sand: rgba(244, 244, 244, 0) !default;
+$rgba-gallery: rgba(239, 239, 239, 0) !default;
+$rgba-ebony: rgba(12, 11, 29, 0) !default;
+$rgba-cod-gray: rgba(11, 11, 11, 0) !default;
+
+//== Configuration Maps =================================================/
+
+/// Breakpoints map
+/// Used with @respond-to mixin
+$breakpoints: (
+  'xxxl': (min-width: 1920px),
+  'xxl': (min-width: 1440px),
+  'xl': (min-width: 1200px),
+  'lg': (min-width: 1024px),
+  'md': (min-width: 992px),
+  'sm': (min-width: 768px),
+  'xs': (min-width: 640px),
+  'xxs': (min-width: 480px),
+  'xxxs': (min-width: 320px)
+) !default;
+
+
+
+////= Global FunkyAnimatronicMoccasinHenchmen Configuration
+//======================================================================//
+
+//== Descriptive Colors =================================================/
+
+/// Standard colors
+/////// Deleted because of redundancy
+
+/// Variant and custom colors
+/////// Deleted because of redundancy
+
+/// RGBa variant and custom  colors
+/////// Deleted because of redundancy
+
+//== Configuration Maps =================================================/
+
+/// Transition Cubic Bézier function map
+/// Used with @ease function
+$eases: (
+  /// Standard
+  'ease': cubic-bezier(.250, .100, .250, 1),
+  'in': cubic-bezier(.420, 0, 1, 1),
+  'out': cubic-bezier(0, 0, .580, 1),
+  'in-out': cubic-bezier(.420, 0, .580, 1),
+  'linear': cubic-bezier(0, 0, 1, 1),
+  /// Cubic
+  'in-cubic': cubic-bezier(.550, .055, .675, .190),
+  'out-cubic': cubic-bezier(.215, .610, .355, 1),
+  'in-out-cubic': cubic-bezier(.645, .045, .355, 1),
+  /// Quad
+  'in-quad': cubic-bezier(.550, .085, .680, .530),
+  'out-quad': cubic-bezier(.250, .460, .450, .940),
+  'in-out-quad': cubic-bezier(.455, .030, .515, .955),
+  /// Quart
+  'in-quart': cubic-bezier(.895, .030, .685, .220),
+  'out-quart': cubic-bezier(.165, .840, .440, 1),
+  'in-out-quart': cubic-bezier(.770, 0, .175, 1),
+  /// Quint
+  'in-quint': cubic-bezier(.755, .050, .855, .060),
+  'out-quint': cubic-bezier(.230, 1, .320, 1),
+  'in-out-quint': cubic-bezier(.860, 0, .070, 1),
+  /// Sine
+  'in-sine': cubic-bezier(.470, 0, .745, .715),
+  'out-sine': cubic-bezier(.390, .575, .565, 1),
+  'in-out-sine': cubic-bezier(.445, .050, .550, .950),
+  /// Expo
+  'in-expo': cubic-bezier(.950, .050, .795, .035),
+  'out-expo': cubic-bezier(.190, 1, .220, 1),
+  'in-out-expo': cubic-bezier(1, 0, 0, 1),
+  /// Circ
+  'in-circ': cubic-bezier(.600, .040, .980, .335),
+  'out-circ': cubic-bezier(.075, .820, .165, 1),
+  'in-out-circ': cubic-bezier(.785, .135, .150, .860),
+  /// Back
+  'in-back': cubic-bezier(.600, -.280, .735, .045),
+  'out-back': cubic-bezier(.175, .885, .320, 1.275),
+  'in-out-back': cubic-bezier(.680, -.550, .265, 1.550)
+) !default;
+
+/// Z-indexing map
+/// Used with @z function
+$zindices: (
+  'beyond': 9999,
+  'over': 9001,
+  'roof': 9000,
+  'major': 8000,
+  'high': 7000,
+  'mid-high': 6000,
+  'mid': 5000,
+  'mid-low': 4000,
+  'low': 3000,
+  'very-low': 2000,
+  'minor': 1000,
+  'floor': 1,
+  'below': -1,
+  'abyss': -9000
+) !default;

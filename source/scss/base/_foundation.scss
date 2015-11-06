@@ -1,0 +1,30 @@
+// _foundation.scss
+
+////= HTML and Body Styling
+//======================================================================//
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: $core__html--font-size;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smooting: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $core__body--background-color;
+  color: $core__body--text-color;
+  font: $core__body--font-size / $core__body--line-height $core__body--font-stack;
+  margin: 0;
+  overflow: hidden;
+}

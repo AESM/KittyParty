@@ -1,0 +1,26 @@
+// _user-data.scss
+
+////= User-Data Components
+//======================================================================//
+
+.user-data {
+  align-items: baseline;
+  display: inherit;
+  line-height: pxem(28px);
+
+  @include el(username) {
+    font-size: pxem(18px);
+    text-transform: lowercase;
+  }
+
+  @include el(hyperlink) {
+    font-size: $sm-font-size;
+  }
+
+  @include el(timestamp) {
+    color: $java;
+    // color: $silver-sand;
+    font-size: pxem(14px);
+    margin: 0 pxem(10px);
+  }
+}

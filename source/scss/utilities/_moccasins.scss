@@ -1,0 +1,144 @@
+// _moccasins.scss
+
+////= Moccasins (Mixins)
+//======================================================================//
+
+/// Prepend vendor prefixes to properties
+/// @param {String} $key - Property's name
+/// @param {Value} $value - Property's value
+@mixin prefixinator($key, $value) {
+  -moz-#{$key}: $value;
+  -ms-#{$key}: $value;
+  -o-#{$key}: $value;
+  -webkit-#{$key}: $value;
+  #{$key}: $value;
+}
+
+/// Animation generator
+/// @param {String} $name - Animation name
+/// @param {Value(s)} $values - Additional animation values (inline)
+  /// $values options - duration timing-function delay iteration-count
+  //direction fill-mode play-state
+/// @requires @prefixinator
+@mixin animatinator($name, $values) {
+  $details: $name + ' ' + $values;
+  @include prefixinator('animation', $details);
+}
+
+/// Animation keyframes
+/// @param {String} $name - Animation name
+/// @content - Keyframes property values
+@mixin keyframes($name) {
+  @-moz-keyframes $name {
+    @content;
+  }
+
+  @-ms-keyframes $name {
+    @content;
+  }
+
+  @-o-keyframes $name {
+    @content;
+  }
+
+  @-webkit-keyframes $name {
+    @content;
+  }
+
+  @keyframes $name {
+    @content;
+  }
+}
+
+/// Runs the @keyframes mixin, then uses the @animatinator mixin to
+//generate a class and placeholder selector for @extend usage
+/// @param {String} $name - Animation name
+/// @param {Value(s)} $values - Additional animation values (inline)
+  /// $values options - duration timing-function delay iteration-count
+  //direction fill-mode play-state
+/// @content - Keyframes property values
+/// @requires @prefixinator
+/// @requires @keyframes
+/// @requires @animatinator
+@mixin animation-frames($name, $values) {
+  @include keyframes($name) {
+    @content;
+  }
+
+  .#{$name},
+  %#{$name} {
+    @include animatinator($name, $values);
+  }
+}
+
+/// Box-sizing generator
+/// @param {Value} $value - Box-size's value
+/// @requires @prefixinator
+@mixin box-sizinator($value) {
+  @include prefixinator('box-sizing', $value);
+}
+
+/// Transformation generator
+/// @param {Value} $values - Transform's function(s)/value(s)
+/// @requires @prefixinator
+@mixin transforminator($values) {
+  $details: $values;
+  @include prefixinator('transform', $details);
+}
+
+@mixin translate($x: 0, $y: 0) {
+  @include transforminator(translate($x, $y));
+}
+
+@mixin translate3d($x: 0, $y: 0, $z: 0) {
+  @include transforminator(translate($x, $y, $z));
+}
+
+@mixin translateX($x: 0) {
+  @include transforminator(translateX($x));
+}
+
+@mixin translateY($y: 0) {
+  @include transforminator(translateY($y));
+}
+
+@mixin translateZ($z: 0) {
+  @include transforminator(translateZ($z));
+}
+
+@mixin scale($x: 0, $y: 0) {
+  @include transforminator(scale($x, $y));
+}
+
+@mixin scale3d($x: 0, $y: 0, $z: 0) {
+  @include transforminator(scale($x, $y, $z));
+}
+
+@mixin scaleX($x: 0) {
+  @include transforminator(scaleX($x));
+}
+
+@mixin scaleY($y: 0) {
+  @include transforminator(scaleY($y));
+}
+
+@mixin scaleZ($z: 0) {
+  @include transforminator(scaleZ($z));
+}
+
+/// Transformation-Origin generator
+/// @param {Value} $values - Transform-Origin's values
+/// @requires @prefixinator
+@mixin transform-originator($values) {
+  $details: $values;
+  @include prefixinator('transform', $details);
+}
+
+/// Transition generator
+/// @param {Value(s)} $values - Transition's values (inline)
+  /// $values options - property duration timing-function delay
+/// @requires @prefixinator
+@mixin transitionator($values) {
+  $details: $values;
+  @include prefixinator('transition', $details);
+}

@@ -1,0 +1,33 @@
+// _animations.scss
+
+////= Animation Classes and Placeholders
+//======================================================================//
+
+// .animation {
+  //
+// }
+
+
+
+////= Animatronics (Animations and Transitions)
+//======================================================================//
+
+.accordion-underline,
+%accordion-underline {
+  &::before {
+    @include scaleX($acc-und__scalex--start);
+    background: currentcolor;
+    content: '';
+    height: pxem($acc-und__height);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transition: inherit;
+  }
+
+  &:active::before,
+  &:hover::before {
+    @include scaleX($acc-und__scalex--end);
+  }
+}
