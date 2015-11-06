@@ -36,6 +36,7 @@ $bg-img: $path__img + '/backgrounds';
 $banner: $path__img + '/banners';
 $fav: $path__img + '/favicons';
 $logo: $path__img + '/logos';
+$portrait: $path__img + '/portraits';
 
 /// JavaScript paths
 $vend-js: $path__js + '/vendors';
@@ -43,7 +44,7 @@ $vend-js: $path__js + '/vendors';
 //== Glyph Stack Assignments ============================================/
 
 /// Main fonts
-$primary-font: $font-stack--aleo;
+$primary-font: $font-stack--roboto-con-light;
 $secondary-font: $font-stack--futura;
 $tertiary-font: $font-stack--garamond;
 $accent-font: $font-stack--lucida-sans-type;
@@ -73,7 +74,7 @@ $hover-color: $java; // _typography => a,i {&:hover {color}}
 $icon-color: $grey; // _typography => .sli-style {color}
 $link-color: $silver; // _typography => a {color}
 $nav-link-color: $silver; // _nav-navbar => .nav,.navbar {a {color}}
-$title-copy-color: $prussian-blue;
+$title-copy-color: $tuna;
 
 //== Numeric Value Assignments ==========================================/
 

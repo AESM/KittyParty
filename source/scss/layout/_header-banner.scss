@@ -5,57 +5,26 @@
 
 .header,
 .banner {
-  @extend .center-align;
   @extend .clearfix;
-  position: relative;
+  align-items: center;
+  display: inherit;
+  height: pxem(60px);
+  padding: 0 pxem(30px);
   z-index: z('floor');
 
-  // @include respond-to('sm') {
-  //   text-align: initial;
-  // }
-
-  @include el(heading) {
-    @extend .banner;
-    background-color: $header-bg-color;
-    padding-bottom: pxem(10px);
-    padding-top: pxem(15px);
+  &__kittyparty,
+  &__headline {
+    display: inherit;
   }
 
-  // @include el(photo) {
-  //   border: pxem(4px) solid $gallery;
-  //   border-radius: $round-radius;
-  //   box-shadow: pxem(2px) pxem(2px) pxem(20px) pxem(-5px) rgba(0, 0, 0, 1);
-  //   max-width: pxem(190px);
-  //   vertical-align: center;
+  &__kittyparty {
+    margin: pxem(10px) 0 0 pxem(12px);
+  }
 
-  //   @include respond-to('sm') {
-  //     display: inline-block;
-  //   }
-  // }
-
-  @include el(title) {
-    color: $title-copy-color;
-    // display: inline-block;
-    font-size: pxem(50px);
-    margin: 0 0 pxem(5px);
-    // margin: 0 0 pxem(25px);
+  &__headline {
+    align-items: inherit;
+    flex: 1 1;
+    justify-content: flex-start;
     position: relative;
-    transition: $select-trans;
-
-    @include respond-to('sm') {
-      float: left;
-      // margin: 0;
-      // bottom: pxem(60px);
-      // vertical-align: center;
-    }
-
-    a {
-      color: $nav-link-color;
-      text-decoration: none;
-    }
-
-    h1 {
-      @extend .center-align;
-    }
   }
 }

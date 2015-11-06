@@ -5,17 +5,12 @@
 
 .main,
 .principal {
-  position: relative;
-
-  // @include el(headline) {
-    //
-  // }
-
-  // @include el(baseline) {
-    //
-  // }
-
-  // @include el(hyperlink) {
-    //
-  // }
+  bottom: 0;
+  color: $title-copy-color;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  right: pxem(255px);
+  top: 0;
 }

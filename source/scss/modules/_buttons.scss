@@ -1,0 +1,11 @@
+// _buttons.scss
+
+////= Button Components
+//======================================================================//
+
+.button {
+  @include el(search) {
+    font-size: pxrem(12px);
+    margin-left: pxem(-50px);
+  }
+}

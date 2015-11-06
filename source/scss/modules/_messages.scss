@@ -1,0 +1,16 @@
+// _messages.scss
+
+////= Message Components
+//======================================================================//
+
+.messages {
+  flex: 1 1;
+  margin: 0;
+  overflow-y: auto;
+  padding: pxem(30px);
+
+  @include el(sent) {
+    display: flex;
+    margin: 0 0 pxem(20px);
+  }
+}

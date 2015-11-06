@@ -10,21 +10,19 @@
   display: flex;
   flex-direction: column;
   float: right;
-  font-size: $sm-font-size;
+  overflow-y: auto;
   position: absolute;
   right: 0;
   top: 0;
-  width: pxem(300px);
+  width: pxem(255px);
 
   &__headline,
   &__footline {
     display: flex;
-    margin: 0;
     position: relative;
   }
 
   &__headline {
-    // display: flex;
     margin: pxem(10px) 0 0 pxem(15px);
     text-transform: uppercase;
   }
@@ -34,8 +32,7 @@
     height: pxem(120px);
     margin-top: pxem(40px);
 
-    div {
-      display: flex;
+    .user-data {
       flex-direction: column;
       margin: pxem(35px) pxem(70px) 0 0;
     }
@@ -43,8 +40,6 @@
 
   &__substance {
     flex: 1 1;
+    font-size: $sm-font-size;
   }
-  // @include el(hyperlink) {
-    //
-  // }
 }

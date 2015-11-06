@@ -5,24 +5,13 @@
 
 .article,
 .composition {
-  // position: relative;
-  // @include box-sizinator(content-box);
-  // font-family: $comp-font;
+  display: inherit;
+  flex: 1 1;
+  flex-direction: column;
+  margin: 0 0 0 pxem(15px);
 
   p {
-    font-size: pxem(14px);
+    font-size: pxem(16px);
+    line-height: pxem(30px);
   }
-
-
-  // @include el(headline) {
-    //
-  // }
-
-  // @include el(baseline) {
-    //
-  // }
-
-  // @include el(hyperlink) {
-    //
-  // }
 }

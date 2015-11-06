@@ -36,80 +36,164 @@
     <h1 class="banner__title">KittyParty</h1>
   </header> -->
   <aside class="sidebar border">
+    <header class="banner__kittyparty">
+      <h4 class="">KittyParty</h4>
+      <nav class="navbar__dropdown">
+        <a href="#" id="settingsMenu" class="navbar__dropdown--menu" aria-haspopup="true">
+          <i class="icon-wrench"></i>
+        </a>
+        <ul class="navbar__dropdown--list" aria-labelledby="settingsMenu" aria-hidden="true">
+          <li class="navbar__dropdown--item">
+            <a href="#" class="navbar__dropdown--hyperlink">A Thing</a>
+          </li>
+          <li class="navbar__dropdown--item">
+            <a href="#" class="navbar__dropdown--hyperlink">Another</a>
+          </li>
+          <li class="navbar__dropdown--item">
+            <a href="#" class="navbar__dropdown--hyperlink">One More</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="sidebar__substance">
-      <h5 class="sidebar__headline">Channels</h5>
-      <nav class="navbar__words">
+      <h5 class="sidebar__headline">Chats</h5>
+      <nav class="navbar__rooms">
         <ul>
-          <li>
-            <a href="/">general</a>
+          <li class="active">
+            <a href="/">#general</a>
           </li>
           <li>
-            <a href="/">random</a>
-          </li>
-          <li>
-            <a href="/">spam</a>
+            <a href="/">#spam</a>
           </li>
         </ul>
       </nav>
 
-      <h5 class="sidebar__headline">Direct Messages</h5>
-      <nav class="navbar__words">
+      <h5 class="sidebar__headline">Messages</h5>
+      <nav class="navbar__rooms">
         <ul>
           <li>
-            <a href="/">molly</a>
+            <a href="/">@molly</a>
           </li>
           <li>
-            <a href="/">dapp</a>
+            <a href="/">@dapp<span class="badge--unread">7</span></a>
           </li>
         </ul>
       </nav>
     </div>
 
     <footer class="sidebar__footline">
-      <img src="public/assets/images/portraits/pew-400x400.png" class="image__avatar">
-      <div>
-        <span class="user">Ali Esmaili</span>
-        <a href="/">Logout</a>
+      <img src="public/assets/images/portraits/pew-400x400.png" class="image__avatar--dashboard" alt="user avatar" />
+      <div class="user-data">
+        <span class="user-data__username">Ali</span>
+        <a href="/" class="user-data__hyperlink">Logout</a>
       </div>
     </footer>
-  </aside>
+  </aside>  <!-- sidebar -->
 
+  <main class="principal">
+    <header class="banner">
+      <h4 class="banner__headline">#general</h4>
+      <form class="form__search">
+        <input class="input__search" type="search" placeholder="Search" />
+        <button class="button__search" type="submit">
+          <i class="icon-magnifier"></i>
+        </button>
+      </form>
+    </header>
 
-<!--   <div class="container">
-    <h4 class="home-page__headline row">Home Page Headline</h4>
+    <div class="messages">
+      <div class="messages__sent">
+        <img src="public/assets/images/portraits/pew-400x400.png" class="image__avatar--chat" alt="user avatar" />
+        <article class="composition">
+          <div class="user-data">
+            <span class="user-data__username">Ali</span>
+            <span class="user-data__timestamp">12:29:54</span>
+          </div>
+          <p class="message">
+            Come on, Fhqwhgads.
+            I said come on Fhqwhgads, I said come on Fhqwhgads &ndash; everybody to the limit, everybody to the limit, everybody come on Fhqwhgads!
+            I said come on Fhqwhgads, I said come on Fhqwhgads &ndash; everybody to the limit, who's that &ndash; it's to the limit, everybody come on Fhqwhgads!
+            Come on Fhqwhgads.  I see you jockin' me.  Tryin' to play like you know me!
+            I'm not gonna play those games!  Mind games.  Board games.
+          </p>
+          <img src="public/assets/images/gifs/Guitar_Bad.gif" class="image--gif" alt="giphy gif" />
+        </article>
+      </div>
 
-    <main class="principal gutter row">
-      <aside class="sidebar column span-3 border">Aside</aside>
+      <div class="messages__sent">
+        <img src="public/assets/images/portraits/pew-400x400.png" class="image__avatar--chat" alt="user avatar" />
+        <article class="composition">
+          <div class="user-data">
+            <span class="user-data__username">Ali</span>
+            <span class="user-data__timestamp">12:47:01</span>
+          </div>
+          <p class="message">
+            I'm like come on Fhqwhgads, I said come on Fhqwhgads &ndash; everybody to the limit, The Cheat is to the limit, everybody come on Fhqwhgads!
+            I said ouh-ahh Fhqwhgads, I said ouh-ahh Fhqwhgads &ndash; who's that fh-huh-hoo-huga-whaa, I said who is that Fhqwhgads!
+            I don't know who it is, but it probably is Fhqwhgads &ndash; I asked my friend Joe, I asked my friend Jake, they said it was Fhqwhgads!
+            I said come on Fhqwhgads, I said come on Fhqwhgads &ndash; who's-ah to the limit?!  Say me!  I'm to the limit!  Everybody come on Fhqwhgads!
+            Man, Fhqwhgads...  You're just making yourself look worse, y'know.  I mean, everybody's just gonna feel sorry for ya.  I mean, I do.
+          </p>
+          <img src="public/assets/images/gifs/Dance_Bad.gif" class="image--gif" alt="giphy gif" />
+        </article>
+      </div>
 
-      <article class="composition column span-9 border">Article</article>
-    </main>
+      <div class="messages__sent">
+        <img src="public/assets/images/portraits/pew-400x400.png" class="image__avatar--chat" alt="user avatar" />
+        <article class="composition">
+          <div class="user-data">
+            <span class="user-data__username">Ali</span>
+            <span class="user-data__timestamp">13:06:20</span>
+          </div>
+          <p class="message">
+            Come toooo the place where tropical breezes bloooow.  Come toooo the coolest place I knoooow.  The people aaare so greaaat!  But really there's ooonly meee!  And that means III'm so greaaat!  And also thereee's The Cheaaat!
+            Oh there's The Cheaaaat In the place where the tropical breezes bloooow.  The Cheaaaat in the coolest place I knoooow.  And the ones are alllways cooold!  And the parties laaast all niiight!  And there's probably looots of chocolate!  And Populaaation Tire!
+            Population &ndash; Tiiiiiiiiiire.
+          </p>
+          <img src="public/assets/images/gifs/Anime_Bad.gif" class="image--gif" alt="giphy gif" />
+        </article>
+      </div>
 
-    <div class="row">
-      <section class="home-page center-align">Section</section>
+      <div class="messages__sent">
+        <img src="public/assets/images/portraits/pew-400x400.png" class="image__avatar--chat" alt="user avatar" />
+        <article class="composition">
+          <div class="user-data">
+            <span class="user-data__username">Ali</span>
+            <span class="user-data__timestamp">13:51:22</span>
+          </div>
+          <p class="message">
+            The Cheat, man...  Where did we go wrong?  Seems like just yesterday we were setting fire to Strong Sad's underwears &ndash; this one's for you.
+            I got mad at The Cheaaat &ndash; Uh! &ndash; for screwin' up the Jumble caperrr &ndash; Uh! &ndash; I hope I don't see his name in the paperrr, In the obituariiiies, cause that would mean he's dead.
+            The Cheat is not dead!  I'm so glad The Cheat is not dead &ndash; The Cheat is not dead &ndash; Dead! &ndash; I'm so glad The Cheat is not dead!  The Cheat is not dead &ndash; Dead! &ndash; I'm so glad The Cheat is not &ndash; Just the claps!  Just the claps!  Uh!  Uh!  All right guys, keep it rollin' for me.  Keep it rollin!  Come on!
+            I cracked wise at The Cheaaat.  But in my defense he cracked wise at me firrrst.  I hope he doesn't end up in a hearrrse at the cemeteryyy &ndash; 'cause once again that would mean that he's dead.
+          </p>
+          <img src="public/assets/images/gifs/Weak_Bad.gif" class="image--gif" alt="giphy gif" />
+        </article>
+      </div>
+
+      <div class="messages__sent">
+        <img src="public/assets/images/portraits/pew-400x400.png" class="image__avatar--chat" alt="user avatar" />
+        <article class="composition">
+          <div class="user-data">
+            <span class="user-data__username">Ali</span>
+            <span class="user-data__timestamp">14:45:06</span>
+          </div>
+          <p class="message">
+            The Cheat is not dead.  I'm so glad The Cheat is not dead.  The Cheat is not dead.  I'm so glad The Cheat is not dead.  The Cheat is not dead.  I'm so glad The Cheat is not dead.  The Cheat is not dead.  I'm so glad The Cheat is not dead.
+            The Cheat is not deaaad!  I'm so glad The Cheat is not dead!  The Cheat is not deeeaaad!  I'm so glad The Cheat is not deeeeeeeaaaaaaa... d!
+            Cheat is not dead!  Cheat is not dead!  No The Cheat's not dead!  The Cheat is not dead!  Ohhh, he's dead!  No, he's not dead!  I said The Cheat's not dead now!  No Cheat's not dead!  Let's call the store!  Collect the receipts!  Got the frozen food!  The Cheat is not dead!  Well The Cheat's not dead!  Cheat is not dead!  No, he's never been dead!  Said The Cheat is not dead!  Whoaaa, deaaad!  Whoa, he's not dead!  No, he's not dead!  No, he's not dead!  No, The Cheat is not dead!  Cheat is not dead!
+            OOOOOOOOOOOOOOOOOOOOHHHHHHHHHHHHHHHHHHHHHH!!!
+          </p>
+          <img src="public/assets/images/gifs/The_System_is_Down.gif" class="image--gif" alt="giphy gif" />
+        </article>
+      </div>
     </div>
 
-    <div class="home-page gutter row">
-      <section class="home-page column span-4 border">A</section>
-
-      <section class="home-page column span-2 border">B</section>
-
-      <section class="home-page column span-5 border">C</section>
-
-      <section class="home-page column span-1 border">D</section>
-    </div>
-
-    <div class="row">
-      <section class="home-page center-align">Section</section>
-    </div>
-
-    <h5 class="home-page__baseline row border">Home Page Baseline</h5>
-
-    <footer class="root row" role="contentinfo">
-      <nav class="navbar__icons">
-        <small class="copyright">&copy; Ali Esmaili | SuitAndCape</small>
-      </nav>
-    </footer>
-  </div> -->
+    <form class="form__message">
+      <textarea></textarea>
+    </form>
+  </main>  <!-- principal -->
 
 <!-- Scripts ==========================================================-->
 

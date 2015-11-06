@@ -7,7 +7,6 @@
 .root {
   @extend .center-align;
   @extend .clearfix;
-  font-size: $md-font-size;
   padding-bottom: pxem(35px);
   padding-top: pxem(35px);
 

@@ -9,16 +9,32 @@
 /// @modifier Ali Esmaili
 /// @based-off-of https://css-tricks.com/snippets/sass/px-to-em-functions/
 /// @requires $core__html--font-size
-@function pxrem($px-target, $px-compared: $core__html--font-size) {
-  @return ($px-target / $px-compared) * 1rem;
+@function pxrem($px-input, $px-compared: $core__html--font-size) {
+  @if (unitless($px-input)) {
+    $px-input: $px-input * 1px;
+  }
+
+  @if (unitless($px-compared)) {
+    $px-compared: $px-compared * 1px;
+  }
+
+  @return ($px-input / $px-compared) * 1rem;
 }
 
 /// Convert pixels to em values
 /// @modifier Ali Esmaili
 /// @link https://css-tricks.com/snippets/sass/px-to-em-functions/
 /// @requires $core__body--font-size
-@function pxem($px-target, $px-compared: $core__body--font-size) {
-  @return ($px-target / $px-compared) * 1em;
+@function pxem($px-input, $px-compared: $core__body--font-size) {
+  @if (unitless($px-input)) {
+    $px-input: $px-input * 1px;
+  }
+
+  @if (unitless($px-compared)) {
+    $px-compared: $px-compared * 1px;
+  }
+
+  @return ($px-input / $px-compared) * 1em;
 }
 
 
@@ -75,4 +91,3 @@
   @warn 'Unknown `#{$key}` in $zindices.';
   @return null;
 }
-
