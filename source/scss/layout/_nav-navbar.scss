@@ -10,34 +10,32 @@
     @extend .navbar;
     margin: pxem(8px) 0 0 pxem(10px);
 
-    @include mo(menu) {
+    &--menu {
       list-style-position: outside;
       list-style-type: circle;
       white-space: nowrap;
       z-index: z(floor);
     }
 
-    @include mo(list) {
+    &--list {
+      background: $prussian-blue;
       display: none;
     }
 
-    // @include mo(item) {
-      //
-    // }
-
-    // @include mo(hyperlink) {
-      //
-    // }
+    &--item {
+      padding: pxem(5px) pxem(8px) pxem(5px) pxem(4px);
+    }
 
     ul {
       @extend .clearfix;
       @extend .no-bullets;
+      border-radius: pxem(10px);
       margin-top: pxem(5px);
     }
-
-    li {
-      position: relative;
-    }
+    //
+    // li {
+    //   position: relative;
+    // }
   }
 
   &__rooms {

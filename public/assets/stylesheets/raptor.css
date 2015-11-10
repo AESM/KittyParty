@@ -653,13 +653,15 @@ sup {
     z-index: 1; }
   .nav__dropdown--list,
   .navbar__dropdown--list {
+    background: #003153;
     display: none; }
+  .nav__dropdown--item,
+  .navbar__dropdown--item {
+    padding: 0.25em 0.4em 0.25em 0.2em; }
   .nav__dropdown ul,
   .navbar__dropdown ul {
+    border-radius: 0.5em;
     margin-top: 0.25em; }
-  .nav__dropdown li,
-  .navbar__dropdown li {
-    position: relative; }
 
 .nav__rooms a,
 .navbar__rooms a {
