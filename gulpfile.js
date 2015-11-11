@@ -47,10 +47,6 @@ gulp.task('raptor-js', function() {
     .pipe(sourcemaps.init())
       .pipe(concat('raptor.js'))
       .pipe(dest(output.javascripts))
-      .pipe(rename({
-        suffix: '.min'
-      }))
-      .pipe(uglifyJs())
     .pipe(sourcemaps.write('./'))
     .pipe(dest(output.javascripts));
 });

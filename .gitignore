@@ -6,12 +6,12 @@
 ## Backup files
 *.bak
 
-## Caches, tags, and temps
-!tags/
+## Caches and temps
 !tmp/cache/.keep
-TAGS
-tags
 tmp/**/*
+
+## Clojure Leiningen projects
+Leiningen.gitignore
 
 ## Codekit
 .codekit-config.json
@@ -19,12 +19,12 @@ config.codekit
 
 ## CVS (Concurrent Versions System)
 */.cvsignore
-.cvsignore
 */CVS/*
 /CVS/*
-CVS
+.cvsignore
 
 ## Executable and compiled files
+*.app
 *.class
 *.com
 *.dll
@@ -32,28 +32,44 @@ CVS
 *.out
 *.so
 
+## Java mobile tools and crash logs
+.mtj.tmp/
+hs_err_pid*
+
+## JSPM local information
+jspm_modules
+
 ## Local databases – make your own, don't share
 *.sql
 *.sqlite
 *.sqlite3
 *.sqlite3-journal
 
-## OS X
+## OS X, Linux, and Windows
+*.cab
+*.lnk
+*.msi
+*.msm
+*.msp
+$RECYCLE.BIN/
 ._*
 .apdisk
+.directory
+.fseventsd
 .AppleDB
 .AppleDesktop
 .AppleDouble
 .DocumentRevisions-V100
 .DS_Store
 .DS_Store?
-.fseventsd
 .LSOverride
 .Spotlight-V100
 .TemporaryItems
+.Trash-*
 .Trashes
 .VolumeIcon.icns
 ehthumbs.db
+Desktop.ini
 Network Trash Folder
 Temporary Items
 Thumbs.db
@@ -63,24 +79,38 @@ Thumbs.db
 *.dmg
 *.gz
 *.iso
+*.ear
 *.jar
 *.rar
 *.tar
+*.war
 *.zip
 
-## Python
+## Project style and script maps
+*.css.map
+*.js.map
+
+## Python optimized and temp files
 __pycache__/
 *.py[cod]
-*$py.class
+.ipynb_checkpoints/
 .Python
 
-## Ruby
+## Ruby bin stubs
 bin/stubs
 
-## Sass/SCSS
-*.css.map
+## Sass (SCSS) caches
 *.sassc
 .sass-cache/
+
+## TeX/LaTeX auxiliary files
+*.fdb_latexmk
+*.fls
+*.lo[ft]
+*.pdfsync
+*.synctex
+*.synctex.gz(busy)
+*.toc
 
 ####= GitHub .gitignore Files
 ##======================================================================##
@@ -107,7 +137,7 @@ cabal.sandbox.config
 *.hp
 .stack-work/
 
-##== Node .gitignore (2015-08-06) =======================================#
+##== Node .gitignore (2015-11-05) =======================================#
 
 ## Logs
 logs
@@ -138,6 +168,12 @@ build/Release
 ## Dependency directory
 ## https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+
+## Optional npm cache directory
+.npm
+
+## Optional REPL history
+.node_repl_history
 
 ##== Rails .gitignore (2015-01-21) ======================================#
 
@@ -252,6 +288,24 @@ build/
 
 ## sftp configuration file
 sftp-config.json
+
+##== Tags .gitignore (2015-09-14) =======================================#
+
+## Ignore tags created by etags, ctags, gtags (GNU global) and cscope
+TAGS
+.TAGS
+!TAGS/
+tags
+.tags
+!tags/
+gtags.files
+GTAGS
+GRTAGS
+GPATH
+cscope.files
+cscope.out
+cscope.in.out
+cscope.po.out
 
 ##== TextMate .gitignore (2010-11-22) ===================================#
 
