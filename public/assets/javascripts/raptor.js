@@ -1,14 +1,11 @@
-// angular.js
+// vendor-import.js
 
 import angular from 'angular';
-
-// jquery.js
-
 import $ from 'jquery';
 
-// vendor.js
+// vendor-test.js
 
-console.log('Angular:', angular.version);
+console.log('AngularJS:', angular.version.full);
 console.log('jQuery:', $.fn.jquery);
 
 // dropdown-menu.js
