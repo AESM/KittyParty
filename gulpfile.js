@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    uglifyJs = require('gulp-uglify'),
     gutil = require('gulp-util'),
 
     chalk = gutil.colors,

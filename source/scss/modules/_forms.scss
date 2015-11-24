@@ -18,7 +18,20 @@
       border: pxem(2px) solid $silver-sand;
       border-radius: pxem(5px);
       outline: none;
+      resize: none;
       width: 100%;
     }
+  }
+}
+
+.statement-box {
+  padding: pxem(30px);
+
+  textarea {
+    border: pxem(2px) solid $silver-sand;
+    border-radius: pxem(5px);
+    outline: none;
+    resize: none;
+    width: 100%;
   }
 }

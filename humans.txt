@@ -19,7 +19,7 @@
 
 /*== Site Info =========================================================*/
 
-  Last update: 2015/10/26
+  Last update: 2015/11/23
   Language: English
-  Components: HTML5, CSS3, Sass, SMACSS, RAPTORSMACSS, JavaScript, Node.js, Express.js, Socket.io, Gulp.js, Giphy API
-  Development tools: Sublime Text 3, iTerm2, Illustrator, Photoshop
+  Components: HTML5, CSS3, JavaScript, AngularJS, Node.js, Express.js, Socket.io, jQuery, Sass, RAPTORSMACSS, Gulp.js, Giphy API
+  Development tools: Sublime Text 3, iTerm2, Illustrator, Photoshop, NPM, JSPM
