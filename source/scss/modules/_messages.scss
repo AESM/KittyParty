@@ -7,9 +7,9 @@
   flex: 1 1;
   margin: 0;
   overflow-y: auto;
-  padding: pxem(30px);
+  padding: pxem(15px);
 
-  @include el(sent) {
+  &__sent {
     display: flex;
     margin: 0 0 pxem(20px);
   }

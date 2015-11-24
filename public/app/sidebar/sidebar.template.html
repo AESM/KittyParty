@@ -1,0 +1,53 @@
+<!-- sidebar.template.html -->
+
+<aside class="sidebar">
+  <header class="banner__kittyparty">
+    <h4 class="">KittyParty</h4>
+    <nav class="navbar__dropdown">
+      <ul class="navbar__dropdown--wrapper">
+        <li>
+          <a class="navbar__dropdown--menu">
+            <i class="icon-wrench"></i>
+          </a>
+          <ul class="navbar__dropdown--list">
+            <li class="navbar__dropdown--item">
+              <a href="#" class="navbar__dropdown--hyperlink">A Thing</a>
+            </li>
+            <li class="navbar__dropdown--item">
+              <a href="#" class="navbar__dropdown--hyperlink">Another</a>
+            </li>
+            <li class="navbar__dropdown--item">
+              <a href="#" class="navbar__dropdown--hyperlink">One More</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="sidebar__substance">
+    <h5 class="sidebar__headline">Chats</h5>
+    <nav class="navbar__rooms">
+      <ul>
+        <li class="active">
+          <a href="/">#General</a>
+        </li>
+        <!-- <li>
+          <a href="/">#Spam</a>
+        </li> -->
+      </ul>
+    </nav>
+
+    <h5 class="sidebar__headline">Messages</h5>
+    <buddies-list class="navbar__rooms"></buddies-list>
+  </div>
+
+  <footer class="sidebar__footline">
+    <pic-dash class="pic-dash"></pic-dash>
+    <div class="user-data">
+      <span class="user-data__username">{{ctrl.currentUser().name}}</span>
+      <!-- <a href="/" class="user-data__hyperlink">Logout</a> -->
+      <a href="/" class="user-data__copy">&copy; SuitAndCape</a>
+    </div>
+  </footer>
+</aside>  <!-- sidebar -->

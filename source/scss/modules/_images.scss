@@ -28,3 +28,27 @@
     max-width: pxem(400px);
   }
 }
+
+.pic {
+  border-radius: $curve-radius;
+  box-sizing: content-box;
+  display: flex;
+
+  &-chat {
+    @extend .pic;
+    max-height: pxem(40px);
+    max-width: pxem(40px);
+
+    .initials {
+      color: $white;
+      font-size: pxem(30px);
+    }
+  }
+
+  &-dash {
+    @extend .pic;
+    height: pxem(80px);
+    margin: pxem(10px) pxem(25px) 0 pxem(10px);
+    width: pxem(80px);
+  }
+}

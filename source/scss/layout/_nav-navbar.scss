@@ -32,10 +32,6 @@
       border-radius: pxem(10px);
       margin-top: pxem(5px);
     }
-    //
-    // li {
-    //   position: relative;
-    // }
   }
 
   &__rooms {
@@ -61,5 +57,6 @@
     color: $nav-link-color;
     font-family: $primary-font;
     text-decoration: none;
+    text-transform: lowercase;
   }
 }

@@ -1,0 +1,17 @@
+<!-- messages.template.html -->
+
+<div class="messages">
+  <div ng-repeat="messageContent in ctrl.messages" class="messages__sent {{messageContent.type}}">
+    <pic-chat user="messageContent.user" ng-if="messageContent.type == 'message'"></pic-chat>
+    <article class="composition">
+      <div class="user-data">
+        <span class="user-data__username" ng-if="messageContent.user">{{messageContent.user.name}}</span>
+        <span class="user-data__timestamp">{{messageContent.created_at | timeStamp}}</span>
+      </div>
+      <p class="message">
+        {{messageContent.message}}
+      </p>
+      <img ng-src="{{messageContent.messageGIF}}" ng-if="messageContent.type == 'message'" class="image--gif" alt="giphy gif" />
+    </article>
+  </div>
+</div>

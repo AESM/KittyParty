@@ -40,7 +40,7 @@ config.codekit
 hs_err_pid*
 
 ## JSPM local information
-jspm_packages
+public/jspm_packages
 
 ## Local databases – make your own, don't share
 *.sql

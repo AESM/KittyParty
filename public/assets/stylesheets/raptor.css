@@ -263,9 +263,7 @@ iframe {
 img {
   border: 0;
   height: auto;
-  margin: 0 auto;
-  max-height: 80vh;
-  max-width: 100%; }
+  margin: 0 auto; }
 
 li {
   display: block; }
@@ -681,7 +679,8 @@ sup {
 .navbar__rooms a {
   color: #C0C0C0;
   font-family: "RobotoCondensed-light", sans-serif;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: lowercase; }
 
 .sad-browser {
   background: #808080;
@@ -1270,6 +1269,16 @@ sup {
     border: 0.1em solid #BFC1C2;
     border-radius: 0.25em;
     outline: none;
+    resize: none;
+    width: 100%; }
+
+.statement-box {
+  padding: 1.5em; }
+  .statement-box textarea {
+    border: 0.1em solid #BFC1C2;
+    border-radius: 0.25em;
+    outline: none;
+    resize: none;
     width: 100%; }
 
 .image__avatar, .image__avatar--dashboard, .image__avatar--chat {
@@ -1288,6 +1297,21 @@ sup {
   max-height: 15em;
   max-width: 20em; }
 
+.pic, .pic-chat, .pic-dash {
+  border-radius: 25%;
+  box-sizing: content-box;
+  display: flex; }
+  .pic-chat {
+    max-height: 2em;
+    max-width: 2em; }
+    .pic-chat .initials {
+      color: #FFFFFF;
+      font-size: 1.5em; }
+  .pic-dash {
+    height: 4em;
+    margin: 0.5em 1.25em 0 0.5em;
+    width: 4em; }
+
 .input__search {
   background-color: #FFFFFF;
   border: 0.1em solid #C0C0C0;
@@ -1301,7 +1325,7 @@ sup {
   flex: 1 1;
   margin: 0;
   overflow-y: auto;
-  padding: 1.5em; }
+  padding: 0.75em; }
   .messages__sent {
     display: flex;
     margin: 0 0 1em; }
@@ -1315,6 +1339,8 @@ sup {
     text-transform: lowercase; }
   .user-data__hyperlink {
     font-size: 85%; }
+  .user-data__copy {
+    font-size: 51%; }
   .user-data__timestamp {
     color: #1FC2C2;
     font-size: 0.7em;
