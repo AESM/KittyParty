@@ -65,7 +65,8 @@ These are the requirements to use the `gulpfile.js` file, as is...
 ## ToDos
 
 - Improve message conversion via tokenization
-  + The Giphy API is not great at dealing with sentences, so the messages must be tokenized
+  + The Giphy API is not great at dealing with sentences, so the messages must be tokenized further
+    * NLP research
 - Create a better response if there is no return GIF
 - Include database and deployment
 - Create an actual sign-in and login

@@ -134,7 +134,9 @@ io.on('connection', function(socket) {
   socket.on('name_change', function(data) {
     console.log('ON name_change', data);
 
-    _.findWhere(buddies, { id: socket.id }).name = data.name;
+    _.findWhere(buddies, {
+      id: socket.id
+    }).name = data.name;
     io.sockets.emit('name_changed', {
       id: data.id,
       name: data.name
