@@ -12,7 +12,7 @@ At the moment, if a message cannot be properly translated into something found o
 
 The notable technologies I worked with include JavaScript (ES6), AngularJS, Node.js, Express.js, Socket.io, jQuery, Sass (SCSS), RAPTORSMACSS, Gulp.js, and the Giphy API.
 
-**WIREFRAME**: To see the initial project wireframe (HTML5, CSS3, Sass, JavaScript, and jQuery), check out the [wireframe branch](https://github.com/AESM/KittyParty/tree/wireframe).
+**WIREFRAME**: To see the project's initial wireframe (HTML5, CSS3, Sass, JavaScript, and jQuery), check out the [wireframe branch](https://github.com/AESM/KittyParty/tree/wireframe).
 
 ## Contents
 
@@ -65,7 +65,8 @@ These are the requirements to use the `gulpfile.js` file, as is...
 ## ToDos
 
 - Improve message conversion via tokenization
-  + The Giphy API is not great at dealing with sentences, so the messages must be tokenized
+  + The Giphy API is not great at dealing with sentences, so the messages must be tokenized further
+    * NLP research
 - Create a better response if there is no return GIF
 - Include database and deployment
 - Create an actual sign-in and login
