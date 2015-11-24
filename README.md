@@ -12,7 +12,7 @@ At the moment, if a message cannot be properly translated into something found o
 
 The notable technologies I worked with include JavaScript (ES6), AngularJS, Node.js, Express.js, Socket.io, jQuery, Sass (SCSS), RAPTORSMACSS, Gulp.js, and the Giphy API.
 
-**WIREFRAME**: To see the initial project wireframe (HTML5, CSS3, Sass, JavaScript, and jQuery), check out the [wireframe branch](https://github.com/AESM/KittyParty/tree/wireframe).
+**WIREFRAME**: To see the project's initial wireframe (HTML5, CSS3, Sass, JavaScript, and jQuery), check out the [wireframe branch](https://github.com/AESM/KittyParty/tree/wireframe).
 
 ## Contents
 
