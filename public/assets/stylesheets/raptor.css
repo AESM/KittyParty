@@ -1315,6 +1315,8 @@ sup {
     text-transform: lowercase; }
   .user-data__hyperlink {
     font-size: 85%; }
+  .user-data__copy {
+    font-size: 50%; }
   .user-data__timestamp {
     color: #1FC2C2;
     font-size: 0.7em;

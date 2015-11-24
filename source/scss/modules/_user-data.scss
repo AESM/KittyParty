@@ -17,6 +17,10 @@
     font-size: $sm-font-size;
   }
 
+  @include el(copy) {
+    font-size: $copy-font-size;
+  }
+
   @include el(timestamp) {
     color: $java;
     // color: $silver-sand;

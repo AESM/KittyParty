@@ -3,7 +3,9 @@
 KittyParty
 ==========================================================================
 
-A chat program where users send GIFs that "correspond" with their messages.
+A chat program where users send GIFs that correspond with their messages.  This is the project's wireframe (HTML5, CSS3, Sass, JavaScript, and jQuery).
+
+**MASTER SOURCE**: To see the most current source code of this project, check out the [master branch](https://github.com/AESM/KittyParty/tree/master).
 
 ## Contents
 
