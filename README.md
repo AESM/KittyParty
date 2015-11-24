@@ -8,6 +8,7 @@ A chat program where users send GIFs that correspond with their messages.
 Once a user has entered the chat, they can send messages to their peers.  The message will be tokenized and "translated" into a GIF found on [Giphy](giphy.com), which will also be sent in the chat.
 
 At the moment, if a message cannot be properly translated into something found on Giphy, Gene Wilder will tell you that you don't get a special GIF, like so...
+
 ![Cannot Translate Message](public/assets/images/gifs/NOPE.gif)
 
 The notable technologies I worked with include JavaScript (ES6), AngularJS, Node.js, Express.js, Socket.io, jQuery, Sass (SCSS), RAPTORSMACSS, Gulp.js, and the Giphy API.
