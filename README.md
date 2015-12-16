@@ -24,8 +24,7 @@ The notable technologies I worked with include JavaScript (ES6), AngularJS, Node
   + [Requirements](#requirements)
   + [Optional Requirements](#optional-requirements)
 - [ToDos](#todos)
-- [User Stories, MVP, Specifications, and Pseudocode](#user-stories-mvp-specifications-and-pseudocode)
-- [Humans.txt](#humanstxt)
+- [Team](#team)
 - [License](#license)
 - [Connect](#connect)
 
@@ -75,15 +74,11 @@ These are the requirements to use the `gulpfile.js` file, as is...
 
 --------------------------------------------------------------------------
 
-## User Stories, MVP, Specifications, and Pseudocode
-
-To see the process that has been documented for this project, [click here](https://github.com/AESM/KittyParty/blob/master/SMSP.md).
-
-## Humans.txt
+## Team
 
 [The humans responsible and technology colophon](https://github.com/AESM/KittyParty/blob/master/humans.txt).
 
-The humans.txt movement is all about getting to know the people behind a website or project.  To find out more, visit [humanstxt.org](http://humanstxt.org/).
+- **Ali Esmaili** _(Developer & Designer)_: [AESM](https://github.com/AESM)
 
 ## License
 
