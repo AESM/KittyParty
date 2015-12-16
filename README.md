@@ -81,7 +81,7 @@ To see the process that has been documented for this project, [click here](https
 
 ## Humans.txt
 
-[We Are People.  Get to Know Us.](https://github.com/AESM/KittyParty/blob/master/humans.txt)
+[The humans responsible and technology colophon](https://github.com/AESM/KittyParty/blob/master/humans.txt).
 
 The humans.txt movement is all about getting to know the people behind a website or project.  To find out more, visit [humanstxt.org](http://humanstxt.org/).
 

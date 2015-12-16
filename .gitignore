@@ -1,7 +1,9 @@
-## Files matching these search terms will be ignored by Git
+# .gitignore
 
-####= Personal .gitignore File List
+####= SuitAndCape .gitignore File List
 ##======================================================================##
+
+## How to use .gitignore: https://help.github.com/articles/ignoring-files
 
 ## Backup files
 *.bak
@@ -40,7 +42,7 @@ config.codekit
 hs_err_pid*
 
 ## JSPM local information
-public/jspm_packages
+jspm_packages
 
 ## Local databases – make your own, don't share
 *.sql
