@@ -1,13 +1,15 @@
+// gulpfile.js
+
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
-    minifyCss = require('gulp-minify-css'),
+    minifyCSS = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     gutil = require('gulp-util'),
 
     chalk = gutil.colors,
-    dest = gulp.dest,
+    destination = gulp.dest,
     greenChalk = chalk.green,
     highlightChalk = chalk.underline.cyan.bgMagenta,
     log = gutil.log,
@@ -24,6 +26,13 @@ var gulp = require('gulp'),
       'javascripts': './public/assets/javascripts'
     };
 
+/// Prevents `watch` from breaking because of errors
+/// SOURCE: http://stackoverflow.com/a/23973536
+function handleError(error) {
+  console.log(error.toString());
+  this.emit('end');
+}
+
 gulp.task('raptor-css', function() {
   log('Generating', highlightChalk('RAPTORSMACSS'), 'based stylesheet at', greenChalk(timestamp));
   return gulp.src(input.mainscss)
@@ -31,13 +40,14 @@ gulp.task('raptor-css', function() {
       .pipe(sass({
         style: 'expanded'
       }))
-      .pipe(dest(output.stylesheets))
+      .on('error', handleError)
+      .pipe(destination(output.stylesheets))
       .pipe(rename({
         suffix: '.min'
       }))
-      .pipe(minifyCss())
+      .pipe(minifyCSS())
     .pipe(sourcemaps.write('./'))
-    .pipe(dest(output.stylesheets));
+    .pipe(destination(output.stylesheets));
 });
 
 gulp.task('raptor-js', function() {
@@ -45,9 +55,10 @@ gulp.task('raptor-js', function() {
   return gulp.src([input.vendorjs, input.js])
     .pipe(sourcemaps.init())
       .pipe(concat('raptor.js'))
-      .pipe(dest(output.javascripts))
+      .on('error', handleError)
+      .pipe(destination(output.javascripts))
     .pipe(sourcemaps.write('./'))
-    .pipe(dest(output.javascripts));
+    .pipe(destination(output.javascripts));
 });
 
 gulp.task('watch', function() {

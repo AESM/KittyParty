@@ -15,6 +15,36 @@ a {
   position: relative;
 }
 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+li,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
 button,
 input,
 optgroup,
@@ -73,10 +103,6 @@ img {
   margin: 0 auto;
 }
 
-li {
-  display: block;
-}
-
 sub,
 sup {
   position: relative;
@@ -89,4 +115,9 @@ sup {
 
 sub {
   bottom: pxem(-4px);
+}
+
+[hidden],
+template {
+  display: none;
 }
