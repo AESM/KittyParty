@@ -19,11 +19,11 @@ var gulp = require('gulp'),
       'js': './source/js/**/*.js',
       'mainscss': './source/scss/raptor.scss',
       'scss': './source/scss/**/*.scss',
-      'vendorjs': './public/assets/javascripts/vendors/**/*.js'
+      'vendorjs': './assets/javascripts/vendors/**/*.js'
     },
     output = {
-      'stylesheets': './public/assets/stylesheets',
-      'javascripts': './public/assets/javascripts'
+      'stylesheets': './assets/stylesheets',
+      'javascripts': './assets/javascripts'
     };
 
 /// Prevents `watch` from breaking because of errors
