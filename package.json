@@ -51,10 +51,6 @@
     "jspm": "^0.16.14"
   },
   "jspm": {
-    "directories": {
-      "baseURL": "public",
-      "packages": "jspm_packages"
-    },
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.7",
       "autolinker": "npm:autolinker@^0.22.0",

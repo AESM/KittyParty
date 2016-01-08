@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, './')));
 
 server.listen(app.get('port'), function() {
   console.log('Express server listening on port', app.get('port'));
