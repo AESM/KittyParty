@@ -5,7 +5,7 @@
 
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
-    minifyCSS = require('gulp-minify-css'),
+    minifyCSS = require('gulp-cssnano'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),

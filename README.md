@@ -18,7 +18,7 @@ The notable technologies I worked with include JavaScript (ES6), AngularJS, Node
 ## Contents
 
 - [Title](#kittyparty)
-- [Usage](#usage)
+- [Local Usage](#local-usage)
   + [Installation](#installation)
   + [Running KittyParty](#running-kittyparty)
   + [Requirements](#requirements)
@@ -28,18 +28,17 @@ The notable technologies I worked with include JavaScript (ES6), AngularJS, Node
 - [License](#license)
 - [Connect](#connect)
 
-## Usage
+## Local Usage
 
 ### Installation
 1. Ensure your computer has the [requirements](#requirements) met
 2. Clone the [master branch](https://github.com/AESM/KittyParty) of this repo
 3. Change to the root directory of the local clone
-4. Run `npm install`
-5. Run `jspm install`
+4. Run `npm run setup`
 
 ### Running KittyParty
 1. Change to the root directory of the local clone
-2. Run `node app`
+2. Run `npm run start`
 3. In your browser of choice, go to [http://127.0.0.1:8080/](http://127.0.0.1:8080/) or [http://localhost:8080](http://localhost:8080)
 4. _OPTIONAL_: Run `gulp` to watch the SCSS files and compile the CSS stylesheet
 
@@ -64,6 +63,9 @@ These are the requirements to use the `gulpfile.js` file, as is...
 
 ## ToDos
 
+- Cram MongoDB in
+- Find out what change happened after Socket.IO 1.3.7, making further versions cause the server to crash after a user disconnects
+  + `"socket.io": "1.3.7"` in `package.json` file, rather than `"socket.io": "^1.3.7"`
 - Improve message conversion via tokenization
   + The Giphy API is not great at dealing with sentences, so the messages must be tokenized further
     * NLP research
@@ -94,5 +96,4 @@ This is based on [The MIT License (MIT)](http://opensource.org/licenses/MIT).  F
 **_Personal GitHub_**    | https://github.com/AESM
 **_Website_**            | https://SuitAndCape.github.io/
 **_LinkedIn_**           | https://www.linkedin.com/in/SuitAndCape
-**_Dribbble_**           | https://dribbble.com/SuitAndCape
 **_Twitter_**            | https://twitter.com/SuitAndCape

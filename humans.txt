@@ -14,15 +14,14 @@
   Personal GitHub: https://github.com/AESM
   Website: https://SuitAndCape.github.io/
   LinkedIn: https://www.linkedin.com/in/SuitAndCape
-  Dribbble: https://dribbble.com/SuitAndCape
   Twitter: https://twitter.com/SuitAndCape
   Location: Southern Bay Area
 
 /*== Info ==============================================================*/
 
-  Last update: 2015/11/23
+  Last update: 2016/01/12
   Languages: JavaScript, CSS3, HTML5
   Components: jQuery, Sass (SCSS), Gulp.js, AngularJS, Node.js,
-    Express.js, Socket.io, RAPTORSMACSS, Giphy API
+    Express.js, MongoDB, Socket.io, RAPTORSMACSS, Giphy API
   Development tools: Sublime Text 3, iTerm2, NPM, SublimeLinter,
     Google Chrome

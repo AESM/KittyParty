@@ -3,20 +3,21 @@
 'use strict';
 
 var express = require('express'),
-    app = express(),
     http = require('http'),
-    _ = require('underscore'),
+    _ = require('underscore');
 
-    bodyParser = require('body-parser'),
+var bodyParser = require('body-parser'),
     errorHandler = require('errorhandler'),
-    methodOverride = require('method-override'),
     logger = require('morgan'),
-    path = require('path'),
+    methodOverride = require('method-override'),
+    path = require('path');
 
+var app = express(),
     server = require('http').createServer(app),
     io = require('socket.io').listen(server),
+    mongo = require('mongodb').MongoClient;
 
-    buddies = [],
+var buddies = [],
     messages = [],
     userCounter = 1;
 
@@ -81,8 +82,9 @@ app.post('/messages', function(request, response) {
               id: user_id
             });
 
-        console.log('giphyData type -', typeof giphyData);
-        console.log('giphyData URL -', giphyData);
+        console.log('Giphy data type –', typeof giphyData);
+
+        console.log('Giphy data URL –', giphyData);
 
         messages.push({
           message: message,
@@ -117,7 +119,9 @@ io.on('connection', function(socket) {
       name: newName
     });
 
-    console.log('messages', messages, mostRecentMessages());
+    console.log('Messages –', messages);
+
+    console.log('Most recent messages –', mostRecentMessages());
 
     io.sockets.emit('new_connection', {
       user: {
@@ -129,6 +133,8 @@ io.on('connection', function(socket) {
       buddies: buddies,
       messages: mostRecentMessages()
     });
+
+    console.log('Users present –', buddies);
   });
 
   socket.on('name_change', function(data) {
@@ -158,6 +164,8 @@ io.on('connection', function(socket) {
       sender:'system',
       created_at: new Date().toISOString(),
     });
+
+    console.log('Info of disconnected user -', buddy);
   });
 });
 

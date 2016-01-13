@@ -2,16 +2,18 @@
   "title": "KittyParty",
   "name": "kittyparty",
   "version": "0.0.1",
-  "description": "A chat application where GIFs are sent alongside chat messages",
-  "main": "index.js",
+  "description": "A team chat application where users communicate in GIFs with messages",
   "scripts": {
+    "start": "node app.js",
+    "setup": "npm install; jspm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AESM/KittyParty.git"
   },
-  "keywords": [
+  "keywords":
+  [
     "KittyParty",
     "RAPTORSMACSS",
     "SCSS",
@@ -40,10 +42,23 @@
     "url": "https://github.com/AESM/KittyParty/issues"
   },
   "homepage": "https://github.com/AESM/KittyParty#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "kerberos": "0.0.17",
+    "method-override": "^2.3.5",
+    "mongodb": "^2.1.4",
+    "morgan": "^1.6.1",
+    "path": "^0.12.7",
+    "request": "^2.65.0",
+    "socket.io": "1.3.7",
+    "underscore": "^1.8.3"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-minify-css": "^1.2.1",
+    "gulp-cssnano": "^2.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
@@ -64,16 +79,5 @@
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
     }
-  },
-  "dependencies": {
-    "body-parser": "^1.14.1",
-    "errorhandler": "^1.4.2",
-    "express": "^4.13.3",
-    "method-override": "^2.3.5",
-    "morgan": "^1.6.1",
-    "path": "^0.12.7",
-    "request": "^2.65.0",
-    "socket.io": "^1.3.7",
-    "underscore": "^1.8.3"
   }
 }
