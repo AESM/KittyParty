@@ -1,7 +1,7 @@
 <!-- README.md -->
 
 KittyParty
-==========================================================================
+===============================================================================
 
 A chat program where users send GIFs that correspond with their messages.
 
@@ -9,7 +9,7 @@ Once a user has entered the chat, they can send messages to their peers.  The me
 
 At the moment, if a message cannot be properly translated into something found on Giphy, Gene Wilder will tell you that you don't get a special GIF, like so...
 
-![Cannot Translate Message](public/assets/images/gifs/NOPE.gif)
+![Cannot Translate Message](assets/images/gifs/NOPE.gif)
 
 The notable technologies I worked with include JavaScript (ES6), AngularJS, Node.js, Express.js, Socket.io, jQuery, Sass (SCSS), RAPTORSMACSS, Gulp.js, and the Giphy API.
 
@@ -17,12 +17,7 @@ The notable technologies I worked with include JavaScript (ES6), AngularJS, Node
 
 ## Contents
 
-- [Title](#kittyparty)
 - [Local Usage](#local-usage)
-  + [Installation](#installation)
-  + [Running KittyParty](#running-kittyparty)
-  + [Requirements](#requirements)
-  + [Optional Requirements](#optional-requirements)
 - [ToDos](#todos)
 - [Team](#team)
 - [License](#license)
@@ -51,15 +46,8 @@ The notable technologies I worked with include JavaScript (ES6), AngularJS, Node
 ### Optional Requirements
 These are the requirements to use the `gulpfile.js` file, as is...
 
-- [Ruby](https://www.ruby-lang.org/en/) 1.8.7+
-- [Sass](https://github.com/sass/sass) 3.4.0+
-- [Gulp](https://github.com/gulpjs/gulp) 3.9.0
-- [Gulp-Concat](https://github.com/contra/gulp-concat) 2.6.0
-- [Gulp-Minify-CSS](https://github.com/murphydanger/gulp-minify-css) 1.2.1
-- [Gulp-Rename](https://github.com/hparra/gulp-rename) 1.2.2
-- [Gulp-Sass](https://github.com/dlmanning/gulp-sass) 2.1.0
-- [Gulp-Sourcemaps](https://github.com/floridoo/gulp-sourcemaps) 1.6.0
-- [Gulp-Util](https://github.com/gulpjs/gulp-util) 3.0.7
+- [Gulp](https://github.com/gulpjs/gulp) 3.9.0+
+- [Gulp-CLI](https://github.com/gulpjs/gulp-cli) 1.1.0+
 
 ## ToDos
 
@@ -74,7 +62,7 @@ These are the requirements to use the `gulpfile.js` file, as is...
 - Create an actual sign-in and login
 - Add user profile pictures or Gravatar inclusion
 
---------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 ## Team
 
@@ -90,10 +78,10 @@ This is based on [The MIT License (MIT)](http://opensource.org/licenses/MIT).  F
 
 ## Connect
 
-|              :tophat:             |              :rocket:             |
-| --------------------------------- | --------------------------------- |
+|               :tophat:               |               :rocket:               |
+| ------------------------------------ | ------------------------------------ |
 **_SuitAndCape GitHub_** | https://github.com/SuitAndCape
 **_Personal GitHub_**    | https://github.com/AESM
-**_Website_**            | https://SuitAndCape.github.io/
+**_Website_**            | http://SuitAndCape.github.io/
 **_LinkedIn_**           | https://www.linkedin.com/in/SuitAndCape
 **_Twitter_**            | https://twitter.com/SuitAndCape

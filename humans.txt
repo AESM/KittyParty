@@ -1,11 +1,11 @@
-/* humanstxt.org */
+# humanstxt.org
 
-/***= Humans Text File
-========================================================================*/
+####= RAPTORFrame Humans Text File
+##===========================================================================##
 
-  The humans responsible & technology colophon
+## The humans responsible & technology colophon
 
-/*== Team ==============================================================*/
+##== Team ====================================================================#
 
   Name: Ali Esmaili
   Role: Developer & Designer
@@ -17,11 +17,10 @@
   Twitter: https://twitter.com/SuitAndCape
   Location: Southern Bay Area
 
-/*== Info ==============================================================*/
+##== Info ====================================================================#
 
   Last update: 2016/01/12
   Languages: JavaScript, CSS3, HTML5
   Components: jQuery, Sass (SCSS), Gulp.js, AngularJS, Node.js,
-    Express.js, MongoDB, Socket.io, RAPTORSMACSS, Giphy API
-  Development tools: Sublime Text 3, iTerm2, NPM, SublimeLinter,
-    Google Chrome
+    Express.js, MongoDB, Socket.io, RAPTORFrame, RAPTORSMACSS, Giphy API
+  Development tools: Sublime Text 3, iTerm2, NPM, SublimeLinter, Google Chrome

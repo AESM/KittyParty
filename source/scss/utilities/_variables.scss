@@ -1,9 +1,9 @@
 // _variables.scss
 
 ////= Global Variable Assignments
-//======================================================================//
+//===========================================================================//
 
-//== Foundation Assignments =============================================/
+//== Foundation Assignments ==================================================/
 
 /// HTML font-size
 /// Used with @pxrem function
@@ -25,7 +25,7 @@ $core__body--text-color: $gallery; // _foundation => body {color}
 /// Body background-color
 $core__body--background-color: $gallery; // _foundation => body {background}
 
-//== Asset Path Assignments =============================================/
+//== Asset Path Assignments ==================================================/
 
 /// Glyph paths
 $font: $path__glyph + '/fonts'; // _glyphs => @font-face {src}
@@ -40,7 +40,7 @@ $portrait: $path__img + '/portraits';
 /// JavaScript paths
 $vend-js: $path__js + '/vendors';
 
-//== Glyph Stack Assignments ============================================/
+//== Glyph Stack Assignments =================================================/
 
 /// Main fonts
 $primary-font: $font-stack--roboto-con-light;
@@ -55,7 +55,7 @@ $code-font: $font-stack--open-sans; // _typography => code {font-family}
 /// Icon usage
 $main-icon: $icon-stack--simple-line-icons; // _typography => .sli-style {font-family}
 
-//== Descriptive Color Assignments ======================================/
+//== Descriptive Color Assignments ===========================================/
 
 /// Main colors
 $primary-color: $blue;
@@ -75,7 +75,7 @@ $link-color: $silver; // _typography => a {color}
 $nav-link-color: $silver; // _nav-navbar => .nav,.navbar {a {color}}
 $title-copy-color: $tuna;
 
-//== Numeric Value Assignments ==========================================/
+//== Numeric Value Assignments ===============================================/
 
 /// Main font sizes
 $font-size: $core__body--font-size; // _typography => h5,p {font-size}
@@ -115,7 +115,7 @@ $light: 300;
 $ultra-light: 200;
 $thin: 100;
 
-//== Assigned Color Maps ================================================/
+//== Assigned Color Maps =====================================================/
 
 $ui-map: (
   'error': $monza,
@@ -129,9 +129,9 @@ $ui-map: (
 
 
 ////= Global FunkyAnimatronicMoccasinHenchmen Variable Assignments
-//======================================================================//
+//===========================================================================//
 
-//== Foundation Variables ===============================================/
+//== Foundation Variables ====================================================/
 
 /// HTML font-size
 /// Used with @pxrem function
@@ -145,7 +145,7 @@ $ui-map: (
 $truncated-bg-color: $gallery;
 $truncated-bg-rgba: $rgba-gallery;
 
-//== Animatronics Variables =============================================/
+//== Animatronics Variables ==================================================/
 
 /// Accordian-underline
 $acc-und__height: 1px;
