@@ -1,9 +1,9 @@
 // _functions.scss
 
 ////= Functions
-//======================================================================//
+//===========================================================================//
 
-//== Pixel Conversion ===================================================/
+//== Pixel Conversion ========================================================/
 
 /// Convert pixels to rem values
 /// @modifier Ali Esmaili
@@ -40,13 +40,13 @@
 
 
 ////= Funky-Nations (Functions)
-//======================================================================//
+//===========================================================================//
 
-//== Pixel Conversion ===================================================/
+//== Pixel Conversion ========================================================/
 
 /////// Deleted because of redundancy
 
-//== Color Tone Adjusters ===============================================/
+//== Color Tone Adjusters ====================================================/
 
 /// Increase the level of blackness in a color by a certain percentage
 /// @param {String} $color - Color to be blackened
@@ -64,7 +64,7 @@
   @return mix($white, $color, $percent);
 }
 
-//== Sass Map Functions =================================================/
+//== Sass Map Functions ======================================================/
 
 /// Cubic Bézier manager
 /// @param {String} $key - Cubic Bézier option

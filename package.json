@@ -12,8 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/AESM/KittyParty.git"
   },
-  "keywords":
-  [
+  "keywords": [
     "KittyParty",
     "RAPTORSMACSS",
     "SCSS",
@@ -46,9 +45,9 @@
     "body-parser": "^1.14.1",
     "errorhandler": "^1.4.2",
     "express": "^4.13.3",
+    "jspm": "^0.16.14",
     "kerberos": "0.0.17",
     "method-override": "^2.3.5",
-    "mongodb": "^2.1.4",
     "morgan": "^1.6.1",
     "path": "^0.12.7",
     "request": "^2.65.0",
@@ -62,8 +61,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-util": "^3.0.7",
-    "jspm": "^0.16.14"
+    "gulp-util": "^3.0.7"
   },
   "jspm": {
     "dependencies": {

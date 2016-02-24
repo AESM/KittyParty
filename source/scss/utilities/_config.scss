@@ -1,15 +1,15 @@
 // _config.scss
 
 ////= Global Configuration
-//======================================================================//
+//===========================================================================//
 
-//== Asset Paths ========================================================/
+//== Asset Paths =============================================================/
 
 $path__glyph: '../glyphs' !default;
 $path__img: '../images' !default;
 $path__js: '../javascripts' !default;
 
-//== Glyph Stacks =======================================================/
+//== Glyph Stacks ============================================================/
 
 /// Sans-serif font stacks
 $font-stack--open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
@@ -31,7 +31,7 @@ $font-stack--roboto-con-light: 'RobotoCondensed-light', sans-serif !default;
 /// Icon stacks
 $icon-stack--simple-line-icons: 'Simple-line-icons';
 
-//== Descriptive Colors =================================================/
+//== Descriptive Colors ======================================================/
 
 /// Standard colors
 $clear: transparent !default;
@@ -115,7 +115,7 @@ $rgba-gallery: rgba(239, 239, 239, 0) !default;
 $rgba-ebony: rgba(12, 11, 29, 0) !default;
 $rgba-cod-gray: rgba(11, 11, 11, 0) !default;
 
-//== Configuration Maps =================================================/
+//== Configuration Maps ======================================================/
 
 /// Breakpoints map
 /// Used with @respond-to mixin
@@ -134,9 +134,9 @@ $breakpoints: (
 
 
 ////= Global FunkyAnimatronicMoccasinHenchmen Configuration
-//======================================================================//
+//===========================================================================//
 
-//== Descriptive Colors =================================================/
+//== Descriptive Colors ======================================================/
 
 /// Standard colors
 /////// Deleted because of redundancy
@@ -147,7 +147,7 @@ $breakpoints: (
 /// RGBa variant and custom  colors
 /////// Deleted because of redundancy
 
-//== Configuration Maps =================================================/
+//== Configuration Maps ======================================================/
 
 /// Transition Cubic Bézier function map
 /// Used with @ease function

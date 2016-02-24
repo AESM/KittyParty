@@ -1,9 +1,9 @@
 // _mixins.scss
 
 ////= Mixins
-//======================================================================//
+//===========================================================================//
 
-//== Standard Input Mixins ==============================================/
+//== Standard Input Mixins ===================================================/
 
 /// BEM Block Element selector
 /// @param {String} $element - Element's name
@@ -34,7 +34,7 @@
   }
 }
 
-//== Sass Map Mixins ====================================================/
+//== Sass Map Mixins =========================================================/
 
 /// Element color map modifier
 /// @param {String} $color-map - Assigned color map's name

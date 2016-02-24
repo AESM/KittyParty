@@ -1,0 +1,7 @@
+{
+  "firebase": "luminous-torch-6285",
+  "public": "./",
+  "ignore": [
+    "firebase.json"
+  ]
+}

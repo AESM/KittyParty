@@ -1,7 +1,7 @@
 // gulpfile.js
 
 ////= RAPTORSMACSS Gulp Tasks
-//======================================================================//
+//===========================================================================//
 
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
@@ -30,7 +30,7 @@ var input = {
       'javascripts': './assets/javascripts'
     };
 
-//== Functions ==========================================================/
+//== Functions ===============================================================/
 
 /// Prevents `watch` from breaking because of errors
 /// SOURCE: http://stackoverflow.com/a/23973536
@@ -39,7 +39,7 @@ function handleError(error) {
   this.emit('end');
 }
 
-//== Style Task =========================================================/
+//== Style Task ==============================================================/
 
 gulp.task('raptor-style', function() {
   log('Generating', highlightChalk('RAPTORSMACSS'), 'based', redChalk('stylesheet'), 'at', greenChalk(timestamp));
@@ -58,7 +58,7 @@ gulp.task('raptor-style', function() {
     .pipe(destination(output.stylesheets));
 });
 
-//== Script Task ========================================================/
+//== Script Task =============================================================/
 
 gulp.task('raptor-script', function() {
   log('Generating', highlightChalk('RAPTORSMACSS'), 'based', redChalk('JavaScript'), 'file at', greenChalk(timestamp));
@@ -71,7 +71,7 @@ gulp.task('raptor-script', function() {
     .pipe(destination(output.javascripts));
 });
 
-//== Management Tasks ===================================================/
+//== Management Tasks ========================================================/
 
 gulp.task('watch', function() {
   log('Watching for changes in the', highlightChalk('RAPTORSMACSS'), redChalk('SCSS'), 'and', redChalk('JS'), 'files...');

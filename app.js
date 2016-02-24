@@ -13,9 +13,10 @@ var bodyParser = require('body-parser'),
     path = require('path');
 
 var app = express(),
-    server = require('http').createServer(app),
-    io = require('socket.io').listen(server),
-    mongo = require('mongodb').MongoClient;
+    // server = require('http').createServer(app),
+    server = require('http').Server(app),
+    // io = require('socket.io').listen(server),
+    io = require('socket.io').listen(server);
 
 var buddies = [],
     messages = [],
@@ -33,12 +34,15 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+// app.use(express.static(__dirname, './'));
 app.use(express.static(path.join(__dirname, './')));
 
 server.listen(app.get('port'), function() {
-  console.log('Express server listening on port', app.get('port'));
-  // console.log('Server running at http://127.0.0.1:' + app.get('port') + '/');
+  console.log('Server running at http://127.0.0.1:' + app.get('port'), 'in', app.get('env'), 'mode');
 });
+// server.listen(config.port, function () {
+//   console.log('Server running at http://127.0.0.1:', config.port, 'in', app.get('env'), 'mode');
+// });
 
 function mostRecentMessages() {
   return messages.slice(messages.length-20, messages.length);
@@ -49,11 +53,11 @@ app.post('/messages', function(request, response) {
   var message = request.body.message,
       addressReadableMessage = (message.split(' ').join('+')).toLowerCase(),
       giphy = 'http://api.giphy.com/',
-      version = 'v1/',
+      versionOne = 'v1/',
       search = 'gifs/search?q=' + addressReadableMessage + '&',
       translate = 'gifs/translate?s=' + addressReadableMessage + '&',
       betaKey = 'api_key=dc6zaTOxFJmzC',
-      messageGiphyAPI = giphy + version + translate + betaKey;
+      messageGiphyAPI = giphy + versionOne + translate + betaKey;
 
   /// Get the Giphy API URL
   http.get((messageGiphyAPI), function(res) {
